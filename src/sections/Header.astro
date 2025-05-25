@@ -2,14 +2,40 @@
 
 ---
 
-<header class="flex items-center justify-between p-2 h-15 bg-transparent sticky top-0">
-  <div class="text-4xl font-caveat font-bold">
-    Cositos De Lana
+<header class="fixed top-0 z-50 h-20 w-full select-none overflow-hidden p-2">
+  <div class="flex justify-between max-w-7xl mx-auto h-full items-center">
+    <div class="text-5xl font-caveat text-pinky-regular ">
+      Cositos de Lana
+    </div>
+    <nav class="md:flex hidden gap-10 text-xl text-text-dark font-nunito">
+      <a href="#hero">Inicio</a>
+      <a href="/products">Productos</a>
+      <a href="/about">Sobre Mí</a>
+      <a href="/contactame">Contactame</a>
+    </nav>
   </div>
-  <nav class="flex gap-4 font-bold text-lg">
-    <a href="/hero">Inicio</a>
-    <a href="/products">Productos</a>
-    <a href="/about">Sobre Mí</a>
-    <a href="/contactame">Contactame</a>
-  </nav>
 </header>
+
+<style>
+  header {
+    background: transparent;
+    animation: header-blur-scroll 0.3s linear forwards;
+    animation-timeline: scroll();
+    animation-range: 0 350px;
+    border-bottom: 1px solid transparent;
+  }
+
+  @keyframes header-blur-scroll {
+    0% {
+      backdrop-filter: blur(0px);
+      background: transparent;
+    }
+
+    100% {
+      backdrop-filter: blur(10px);
+      background: #fff;
+      box-shadow: 1px 1px 5px #0003;
+      height: 70px;
+    }
+  }
+</style> 

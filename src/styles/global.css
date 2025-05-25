@@ -16,6 +16,19 @@
 }
 
 @theme {
+  /* Fuentes */
   --font-caveat: 'Caveat', cursive;
   --font-nunito: 'Nunito', sans-serif;
+
+  /* Colores */
+  --color-pinky-light: #f8c4d8;
+  --color-pinky-regular: #e79bb1;
+  --color-pinky-dark: #d97f97;
+  
+  --color-more-light: #e8dffa;
+
+  --color-text-light: #8d7267;
+  --color-text-dark: #5D4037;
+  --color-crema: #FEF9F3;
+  
 }
