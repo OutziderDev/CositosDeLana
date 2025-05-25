@@ -1,21 +1,35 @@
 ---
 import background from '../assets/background.svg';
 ---
-<section id="hero" class="relative h-screen w-full bg-gradient-to-br from-crema to-more-light">
-
+<section id="hero" class="relative h-screen w-full bg-gradient-to-br from-crema to-75% to-more-light">
+  <img id="background" src={background.src} alt=""  />
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row gap-1 top-1/2 absolute -translate-y-1/2 items-center">
+      <!-- Info Cositos -->
+      <div class="flex flex-col justify-center">
+        <h1 class="font-caveat text-8xl text-pinky-dark font-bold animate-bounce">Cositos de Lana</h1>
+        <p>Tejidos únicos hechos con amor y dedicación</p>
+        <p>Amigurumis, bolsos artesanales y decoración para el hogar. Cada pieza es única y especialmente diseñada para llenar de calidez y color tu espacio.</p>
+        <div>
+          <a href="">Ver Productos</a>
+          <a href="">Cotizar Producto</a>
+        </div>
+      </div>
+      <!-- Ilustracion Cositos -->
+       <div>
+        <img src="/images/ilustracion.png" class="object-contain" alt="">
+       </div>
+    </div>
+  </div>
 </section>
 
-<!-- <section class="bg-yellow-700/20 h-screen">
-  <img id="background" src={background.src} alt="" fetchpriority="high" />
-</section>
 
 <style>
 	#background {
-		position: fixed;
-		
+		position: absolute;
+		opacity: 90%;
 		width: 100%;
-		height: 100%;
-		z-index: -1;
-		filter: blur(50px);
+		height: inherit;
+		filter: blur(100px);
 	}
-</style>   -->
+</style>   
