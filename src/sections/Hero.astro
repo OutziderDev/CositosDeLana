@@ -1,10 +1,10 @@
 ---
 import background from '../assets/background.svg';
 ---
-<section id="hero" class="relative overflow-hidden p-4 bg-gradient-to-br from-crema to-75% to-more-light ">
+<section id="hero" class="relative overflow-hidden bg-gradient-to-br from-crema to-75% to-more-light ">
   <img id="background" src={background.src} alt="imagen de fondo de seccion" class="absolute inset-0 select-none h-full w-full object-cover opacity-90 blur-2xl -z-10"  />
 
-  <div class="max-w-7xl mx-auto pt-20 z-10">
+  <div class="max-w-7xl mx-auto pt-35 md:pt-20 pb-30 px-2 z-10">
     <div class="flex flex-col md:flex-row gap-1 items-center">
       <!-- Info Cositos -->
       <div class="flex flex-col justify-center md:w-1/2">
@@ -18,11 +18,18 @@ import background from '../assets/background.svg';
       </div>
 
       <!-- Ilustracion Cositos -->
-      <div class="relative  flex  ">
-        <img src="/images/ilustracion.png" class="object-cover scale-75" alt="">
+      <div class="relative  ">
+        <img src="/images/ilustracion.png" class="object-contain md:scale-75 md:ml-16" alt="">
       </div>
     </div>
   </div>
+
+  <!-- Shape separadora -->
+  
+  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" class="absolute fill-white rotate-y-180 bottom-0" >
+      <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+  </svg>
+  
 </section>
 
 
