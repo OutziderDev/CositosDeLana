@@ -2,30 +2,128 @@
 
 ---
 
-<section id="products" class=" w-full">
+<section id="products" class="mt-10 md:mt-0 w-full">
   <div class="max-w-7xl mx-auto p-2">
     <h2 class="text-pinky-regular text-center text-6xl font-caveat font-semibold">Mis Creaciones</h2>
     <p class="text-center text-text-dark text-xl mt-10">Cada pieza está hecha a mano con materiales de alta calidad, pensando en los <br> detalles que hacen especial cada creación.</p>
     
     <!-- Menu Tabs -->
-    <div class="flex gap-4 items-center justify-center mt-10">
+    <div id="tabs" class="grid grid-cols-2 md:grid-cols-4  gap-4 items-center justify-center mt-10 font-nunito">
       <button   
-        class=`px-5 py-2 rounded-full text-xl transition-all text-white shadow-md bg-pinky-regular hover:bg-pinky-dark cursor-pointer`>
-        Todos
+      class="tab-btn px-5 py-2 rounded-full text-xl transition-all text-white shadow-md bg-pinky-regular hover:bg-pinky-dark cursor-pointer"
+      data-tab="todos">
+      Todos
       </button>
       <button   
-        class=`px-5 py-2 rounded-full text-xl transition-all text-white shadow-md bg-pinky-regular hover:bg-pinky-dark cursor-pointer`>
-        Amigurumis
+      class="tab-btn px-5 py-2 rounded-full text-xl transition-all shadow-md bg-slate-100 hover:bg-pinky-regular hover:text-white cursor-pointer"
+      data-tab="amigurumis">
+      Amigurumis
       </button>
       <button   
-        class=`px-5 py-2 rounded-full text-xl transition-all text-white shadow-md bg-pinky-regular hover:bg-pinky-dark cursor-pointer`>
-        Bolsos
+      class="tab-btn px-5 py-2 rounded-full text-xl transition-all shadow-md bg-slate-100 hover:bg-pinky-regular hover:text-white cursor-pointer"
+      data-tab="bolsos">
+      Bolsos
       </button>
       <button   
-        class=`px-5 py-2 rounded-full text-xl transition-all text-white shadow-md bg-pinky-regular hover:bg-pinky-dark cursor-pointer`>
-        Decoración
+      class="tab-btn px-5 py-2 rounded-full text-xl transition-all shadow-md bg-slate-100 hover:bg-pinky-regular hover:text-white cursor-pointer"
+      data-tab="decoracion">
+      Decoración
       </button>
+    </div>
+
+    <!-- Tab Contents -->
+    <div id="tab-contents" class="mt-8">
+      <div class="tab-content" data-content="todos">
+      <!-- Aquí va el contenido de Todos -->
+      <p class="text-center text-lg">Aquí puedes ver todas las creaciones disponibles.</p>
+      </div>
+      <div class="tab-content hidden" data-content="amigurumis">
+      <!-- Aquí va el contenido de Amigurumis -->
+      <p class="text-center text-lg">Descubre nuestros amigurumis hechos a mano.</p>
+      </div>
+      <div class="tab-content hidden" data-content="bolsos">
+      <!-- Aquí va el contenido de Bolsos -->
+      <p class="text-center text-lg">Explora la colección de bolsos tejidos.</p>
+      </div>
+      <div class="tab-content hidden" data-content="decoracion">
+      <!-- Aquí va el contenido de Decoración -->
+      <p class="text-center text-lg">Encuentra piezas únicas de decoración.</p>
+      </div>
     </div>
 
   </div>
 </section>
+
+<script>
+  // Aseguramos que los elementos existen y son del tipo correcto
+  const tabBtns = document.querySelectorAll<HTMLButtonElement>('.tab-btn');
+  const tabContents = document.querySelectorAll<HTMLElement>('.tab-content');
+
+  function setActiveTab(tab: any  ) {
+    if (!tab) return;
+
+    tabBtns.forEach(btn => {
+      const btnTab = btn.dataset.tab;
+      if (btnTab === tab) {
+        btn.classList.remove('bg-slate-100', 'hover:text-white', 'hover:bg-pinky-regular', 'text-black');
+        btn.classList.add('bg-pinky-regular', 'text-white', 'hover:bg-pinky-dark');
+      } else {
+        btn.classList.remove('bg-pinky-regular', 'text-white', 'hover:bg-pinky-dark');
+        btn.classList.add('bg-slate-100', 'hover:text-white', 'hover:bg-pinky-regular', 'text-black');
+      }
+    });
+
+    tabContents.forEach(content => {
+      const contentTab = content.dataset.content;
+      if (contentTab === tab) {
+        content.classList.remove('hidden');
+      } else {
+        content.classList.add('hidden');
+      }
+    });
+  }
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const tab = btn.dataset.tab;
+      setActiveTab(tab);
+    });
+  });
+
+  // Inicializa con la pestaña "todos"
+  setActiveTab('todos');
+</script>
+
+<!-- <script>
+  const tabBtns = document.querySelectorAll('.tab-btn');
+  const tabContents = document.querySelectorAll('.tab-content');
+
+  function setActiveTab(tab) {
+    tabBtns.forEach(btn => {
+      if (btn.dataset.tab === tab) {
+        btn.classList.remove('bg-slate-100', 'hover:text-white', 'hover:bg-pinky-regular', 'text-black');
+        btn.classList.add('bg-pinky-regular', 'text-white', 'hover:bg-pinky-dark');
+      } else { 
+        btn.classList.remove('bg-pinky-regular', 'text-white', 'hover:bg-pinky-dark');
+        btn.classList.add('bg-slate-100', 'hover:text-white', 'hover:bg-pinky-regular', 'text-black');
+      }
+    });
+
+    tabContents.forEach(content => {
+      if (content.dataset.content === tab) {
+        content.classList.remove('hidden');
+      } else {
+        content.classList.add('hidden');
+      }
+    });
+  }
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      setActiveTab(btn.dataset.tab);
+    });
+  });
+
+  // Inicializa con la pestaña "todos"
+  setActiveTab('todos');
+</script> -->
