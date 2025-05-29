@@ -39,9 +39,12 @@ import {productos} from '../data.ts'
     <div id="tab-contents" class="mt-10">
 
       <div class="tab-content" data-content="todos">
-        <div id="contenedor-todos" class="grid grid-cols-1 md:grid-cols-3">
-          
-          <ProductCard/>
+        <div id="contenedor-todos" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {
+            productos.map( producto => (
+              <ProductCard product={producto}/>
+            ))
+          }
         </div>
       </div>
       <div class="tab-content hidden" data-content="amigurumis">
