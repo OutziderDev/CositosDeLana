@@ -7,4 +7,4 @@ export interface Producto {
   precio: number
 }
 
-type Categorias = "amigurumis" | "bolsos" | "decoracion"
+type Categorias = "Amigurumis" | "Bolsos" | "Decoración"

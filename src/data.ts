@@ -7,7 +7,7 @@ export const productos: Producto[] = [
     tamaño: 6,
     descripcion: "Tierno conejito de crochet, ideal como regalo de san valentin!",
     /* descripcion: "Tierno osito de crochet, ideal como regalo para niños y bebés.", */
-    categoria: "amigurumis",
+    categoria: "Amigurumis",
     precio: 10.00
   },
   {
@@ -15,7 +15,7 @@ export const productos: Producto[] = [
     foto: "bolso-camila.webp",
     tamaño: 10,
     descripcion: "Bolso de tira tejido a mano, ideal para llevar tus cosas con estilo.",
-    categoria: "bolsos",
+    categoria: "Bolsos",
     precio: 15.00
   },
   {
@@ -23,7 +23,7 @@ export const productos: Producto[] = [
     foto: "stitch.webp",
     tamaño: 4,
     descripcion: "Pareja de amigurumis de Stitch y Angel, perfectos para los amantes de Disney.",
-    categoria: "amigurumis",
+    categoria: "Amigurumis",
     precio: 8.00
   }
 ] 
