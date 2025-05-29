@@ -37,8 +37,8 @@ import {productos} from '../data.ts'
 
     <!-- Tab Contents -->
     <div id="tab-contents" class="mt-10">
-
-      <div class="tab-content" data-content="todos">
+      <!-- Contenido de todos los productos -->
+      <section class="tab-content" data-content="todos">
         <div id="contenedor-todos" class="grid grid-cols-1 md:grid-cols-3 gap-8">
           {
             productos.map( producto => (
@@ -46,11 +46,20 @@ import {productos} from '../data.ts'
             ))
           }
         </div>
-      </div>
-      <div class="tab-content hidden" data-content="amigurumis">
-      <!-- Aquí va el contenido de Amigurumis -->
-      <p class="text-center text-lg">Descubre nuestros amigurumis hechos a mano.</p>
-      </div>
+      </section>
+
+      <!-- Contenido de Solo Amigurumis -->
+      <section class="tab-content hidden" data-content="amigurumis">
+        <div id="contenedor-todos" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {
+            productos.filter( producto => producto.categoria === 'Amigurumis').map( producto => (
+              <ProductCard product={producto}/>
+            ))
+          }
+        </div>
+      </section>
+
+
       <div class="tab-content hidden" data-content="bolsos">
       <!-- Aquí va el contenido de Bolsos -->
       <p class="text-center text-lg">Explora la colección de bolsos tejidos.</p>
