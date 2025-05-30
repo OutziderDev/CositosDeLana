@@ -6,13 +6,13 @@ const product = Astro.props.product as Producto;
   <div class="relative group overflow-hidden">
     <img src=`/images/productos/${product.foto}` class="h-96 w-full object-cover group-hover:scale-105 transition-transform duration-300" alt="">
     <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-15 transition-opacity "></div>
-    <span class="absolute bottom-8 left-5 font-nunito bg-pinky-dark text-white px-2 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-200">{product.categoria}</span>
+    <span class="absolute bottom-8 left-5 font-nunito bg-pinky-dark font-bold text-white px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-200">{product.categoria}</span>
   </div>
   <div class="p-4">
-    <h3 class="text-text-dark font-bold font-caveat text-3xl">{product.nombre}</h3>
+    <h3 class="text-text-dark text-pretty font-bold font-caveat text-3xl">{product.nombre}</h3>
     <p class="text-text-light text-lg mt-3">{product.descripcion}</p>
     <div class="flex justify-between mt-5">
-      <span class="font-bold font-nunito text-pinky-regular text-xl">Desde {product.precio.toFixed(2)} </span>
+      <span class="font-bold font-nunito text-pinky-regular text-xl">Desde ${product.precio.toFixed(2)} </span>
       <button class="font-nunito text-pinky-regular px-2 py-1 rounded-full hover:bg-slate-100 cursor-pointer">Consultar</button>
     </div>
   </div>

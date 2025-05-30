@@ -38,7 +38,7 @@ import {productos} from '../data.ts'
     <!-- Tab Contents -->
     <div id="tab-contents" class="mt-10">
       <!-- Contenido de todos los productos -->
-      <section class="tab-content" data-content="todos">
+      <section class="tab-content animate-fade-in-top" data-content="todos">
         <div id="contenedor-todos" class="grid grid-cols-1 md:grid-cols-3 gap-8">
           {
             productos.map( producto => (
@@ -49,8 +49,8 @@ import {productos} from '../data.ts'
       </section>
 
       <!-- Contenido de Solo Amigurumis -->
-      <section class="tab-content hidden" data-content="amigurumis">
-        <div id="contenedor-todos" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <section class="tab-content hidden animate-fade-in-left" data-content="amigurumis">
+        <div id="contenedor-amigurumis" class="grid grid-cols-1 md:grid-cols-3 gap-8">
           {
             productos.filter( producto => producto.categoria === 'Amigurumis').map( producto => (
               <ProductCard product={producto}/>
@@ -59,10 +59,9 @@ import {productos} from '../data.ts'
         </div>
       </section>
 
-
       <!-- Aquí va el contenido de Bolsos -->
-      <section class="tab-content hidden" data-content="bolsos">
-        <div id="contenedor-todos" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <section class="tab-content hidden animate-fade-in-left" data-content="bolsos">
+        <div id="contenedor-bolsos" class="grid grid-cols-1 md:grid-cols-3 gap-8">
           {
             productos.filter( producto => producto.categoria === 'Bolsos').map( producto => (
               <ProductCard product={producto}/>
@@ -73,13 +72,44 @@ import {productos} from '../data.ts'
 
 
       <!-- Aquí va el contenido de Decoración -->
-      <div class="tab-content hidden" data-content="decoracion">
+      <section class="tab-content hidden animate-fade-in-left" data-content="decoracion">
         <p class="text-center text-lg">Encuentra piezas únicas de decoración.</p>
-      </div>
+      </section>
     </div>
 
   </div>
 </section>
+
+<style>
+  .animate-fade-in-top {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  .animate-fade-in-left {
+    animation: fadeInLeft 0.3s both;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      translate: 0 100px ;
+    }
+    
+    100$ {
+      opacity: 1;
+      translate: 0;
+    }
+  }
+
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      translate: 100px 0;
+    }
+    100% {
+      opacity:1;
+      translate: 0;
+    }
+  }
+</style>
 
 <script>
   // Aseguramos que los elementos existen y son del tipo correcto
@@ -120,37 +150,3 @@ import {productos} from '../data.ts'
   // Inicializa con la pestaña "todos"
   setActiveTab('todos');
 </script>
-
-<!-- <script>
-  const tabBtns = document.querySelectorAll('.tab-btn');
-  const tabContents = document.querySelectorAll('.tab-content');
-
-  function setActiveTab(tab) {
-    tabBtns.forEach(btn => {
-      if (btn.dataset.tab === tab) {
-        btn.classList.remove('bg-slate-100', 'hover:text-white', 'hover:bg-pinky-regular', 'text-black');
-        btn.classList.add('bg-pinky-regular', 'text-white', 'hover:bg-pinky-dark');
-      } else { 
-        btn.classList.remove('bg-pinky-regular', 'text-white', 'hover:bg-pinky-dark');
-        btn.classList.add('bg-slate-100', 'hover:text-white', 'hover:bg-pinky-regular', 'text-black');
-      }
-    });
-
-    tabContents.forEach(content => {
-      if (content.dataset.content === tab) {
-        content.classList.remove('hidden');
-      } else {
-        content.classList.add('hidden');
-      }
-    });
-  }
-
-  tabBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      setActiveTab(btn.dataset.tab);
-    });
-  });
-
-  // Inicializa con la pestaña "todos"
-  setActiveTab('todos');
-</script> -->
