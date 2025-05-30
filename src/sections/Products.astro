@@ -73,7 +73,13 @@ import {productos} from '../data.ts'
 
       <!-- Aquí va el contenido de Decoración -->
       <section class="tab-content hidden animate-fade-in-left" data-content="decoracion">
-        <p class="text-center text-lg">Encuentra piezas únicas de decoración.</p>
+        <div id="contenedor-decoracion" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {
+            productos.filter( producto => producto.categoria === 'Decoración').map( producto => (
+              <ProductCard product={producto}/>
+            ))
+          }
+        </div>
       </section>
     </div>
 

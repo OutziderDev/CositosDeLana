@@ -25,5 +25,13 @@ export const productos: Producto[] = [
     descripcion: "Pareja de amigurumis de Stitch y Angel, perfectos para los amantes de Disney.",
     categoria: "Amigurumis",
     precio: 8.00
+  },
+  {
+    nombre: "Sobremesa clásico",
+    foto: "sobremesa.webp",
+    tamaño: 22,
+    descripcion: "Sobremesa tejido a mano, ideal para decorar tu hogar con un toque único.",
+    categoria: "Decoración",
+    precio: 18.50
   }
 ] 
