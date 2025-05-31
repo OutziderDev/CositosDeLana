@@ -4,12 +4,12 @@
 
 <header class="fixed top-0 z-50 h-20 w-full select-none overflow-hidden p-2">
   <div class="flex justify-between max-w-7xl mx-auto h-full items-center">
-    <div class="text-5xl font-caveat text-pinky-regular ">
+    <div class="text-3xl sm:text-4xl md:text-5xl font-caveat text-pinky-regular ">
       Cositos de Lana
     </div>
 
-    <div class="md:hidden flex items-center justify-center mr-6">
-      <svg  xmlns="http://www.w3.org/2000/svg"  class="size-6 stroke-pinky-regular hover:stroke-pinky-dark cursor-pointer" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+    <div class="md:hidden flex items-center justify-center mr-2">
+      <svg  xmlns="http://www.w3.org/2000/svg"  class="h-6 w-6 stroke-pinky-regular hover:stroke-pinky-dark cursor-pointer" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
     </div>
 
     <nav class="md:flex hidden gap-10 text-xl text-text-dark [&>a:hover]:text-pinky-dark font-nunito">
@@ -35,11 +35,9 @@
 
 <style>
   header {
-    background: transparent;
     animation: header-blur-scroll 0.3s linear forwards;
     animation-timeline: scroll();
     animation-range: 0 350px;
-    border-bottom: 1px solid transparent;
   }
 
   @keyframes header-blur-scroll {
@@ -53,6 +51,7 @@
       background: #fff;
       box-shadow: 1px 1px 5px #0003;
       height: 70px;
+      width: 100%;
     }
   }
 </style> 
