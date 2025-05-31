@@ -3,8 +3,9 @@
 ---
 <section id="about" class="mt-10 pb-30 w-full  bg-more-light mask-t-from-80% relative">
   <div class="max-w-7xl mx-auto pt-50 p-4  grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-    <div class="order-2 md:order-1">
-      <img src="images/crafter.webp" class="object-contain h-[700px] w-full animate-levitar"  alt="">
+    <div class="order-2 md:order-1 relative">
+      <div class="absolute -right-2 md:right-0 top-10 lg:-top-15 size-30 bg-transparent border-6 border-dashed border-pinky-dark rounded-full animation-rodar"></div>
+      <img src="images/crafter.webp" class="object-contain h-[700px] w-full  animate-levitasr"  alt="">
     </div>
     <!-- Descripcion -->
     <div class="order-1 md:order-2">
@@ -23,30 +24,45 @@
 
 <style>
   .animate-levitar{
-    animation: levitar 10s infinite;
+    animation: levitar 12s infinite ease-in-out;
+  }
+  .animation-rodar {
+    animation: animate-rodar 6s ease-in-out infinite alternate;
   }
 
   @keyframes levitar {
-    0% {
-      transform: translate(0, 0);
-    }
-    15% {
-      transform: translate(-30px, -30px);
-    }
-    30% {
-      transform: translate(-5, -5);
-    }
-    45% {
-      transform: translate(-5px, 30px);
-    }
-    60% {
-      transform: translate(0, 0);
-    }
-    75% {
-      transform: translate(30px,30px);
-    }
-    100{
-      transform: translate(0,0)
-    }
+  0% {
+    transform: translate(0, 0);
   }
+  15% {
+    transform: translate(-10px, -10px); /* esquina sup izquierda */
+  }
+  30% {
+    transform: translate(-3px, -2px);   /* casi al centro */
+  }
+  45% {
+    transform: translate(10px, -10px);  /* esquina sup derecha */
+  }
+  60% {
+    transform: translate(3px, 1px);     /* casi al centro */
+  }
+  75% {
+    transform: translate(10px, 10px);   /* esquina inf derecha */
+  }
+  87% {
+    transform: translate(-2px, 5px);    /* casi centro otra vez */
+  }
+  100% {
+    transform: translate(0px, 0px);  /* esquina inf izquierda */
+  }
+}
+
+@keyframes animate-rodar {
+  0% {
+    transform: rotate(0deg);  
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
 </style>
