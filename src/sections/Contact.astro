@@ -1,0 +1,86 @@
+---
+
+---
+<section id="contactame" class="py-20 w-full bg-crema">
+  <div class="max-w-7xl mx-auto p-4">
+    <h2 class="text-pinky-regular text-center text-6xl font-caveat font-semibold select-none">Contáctame</h2>
+    <p class="text-center text-text-dark font-nunito text-pretty text-xl mt-10 select-none">¿Interesado en alguno de mis productos o quieres algo personalizado? <br> ¡Envíame un mensaje y te responderé a la brevedad!</p>
+  
+    <div class="mt-13 grid grid-cols-1 md:grid-cols-5 gap-8 items-start">
+      <div class="md:col-span-3 ">
+        <form class="bg-white p-6 rounded-2xl shadow-md border border-black/5">
+        
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+            <div>
+              <label for="name" class="block mb-2 text-xl font-nunito text-text-dark select-none">Nombre:</label>
+              <input type="text" id="name" name="name" required class="border border-slate-400 focus:outline-none focus:ring-2 focus:ring-pinky-light focus:border-pinky-dark transition duration-100 text-text-dark px-4 py-2 w-full rounded-lg" placeholder="Tu nombre" />
+            </div>
+
+            <div>
+              <label for="email" class="block mb-2 text-xl font-nunito text-text-dark select-none"> Correo electrónico: </label>
+              <input type="email" id="email" name="email" required class="border border-slate-400 focus:outline-none focus:ring-2 focus:ring-pinky-light focus:border-pinky-dark transition duration-100 text-text-dark px-4 py-2 w-full rounded-lg" placeholder="tu@email.com" />
+            </div>
+          </div>
+          
+          <div class="mb-4">
+            <label for="productType" class="block mb-2 text-xl font-nunito text-text-dark select-none">¿Qué te interesa? </label>
+            <select id="productType" name="productType" class="border border-slate-400 focus:outline-none focus:ring-2 focus:ring-pinky-light focus:border-pinky-dark transition duration-100 text-text-dark px-4 py-2 w-full rounded-lg">
+              <option value="Amigurumi">Amigurumis</option>
+              <option value="Bolso">Bolsos</option>
+              <option value="Decoración">Decoración</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+          
+          <div class="mb-6">
+            <label for="message" class="block mb-2 text-xl font-nunito text-text-dark select-none"> Descripción: </label>
+            <textarea id="message" name="message" required rows={5} class="border border-slate-400 focus:outline-none focus:ring-2 focus:ring-pinky-light focus:border-pinky-dark transition duration-100 text-text-dark px-4 py-2 w-full rounded-lg resize-none" placeholder="Cuéntame qué te gustaría..." ></textarea>
+          </div>
+          
+          <button type="submit" class="group cursor-pointer bg-pinky-regular text-white px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-all duration-300 font-semibold hover:bg-pinky-dark w-full flex items-center justify-center gap-2" > 
+            Enviar mensaje 
+            <svg  xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 group-hover:rotate-[360deg] group-hover:translate-x-2 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round" >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M10 14l11 -11" />
+              <path d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5" />
+            </svg>
+          </button>
+        </form>
+      </div>
+      
+      <div class="md:col-span-2">
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+      <h3 class="text-2xl font-handwritten text-primary mb-4">Conversemos</h3>
+      
+      <div class="mb-6">
+      <p class="mb-2 font-medium">Ubicación</p>
+      <p class="text-brown-light">Santiago, Chile</p>
+      </div>
+      
+      <div class="mb-6">
+      <p class="mb-2 font-medium">Horario de atención</p>
+      <p class="text-brown-light">Lunes a Viernes: 10:00 - 19:00</p>
+      <p class="text-brown-light">Sábado: 10:00 - 15:00</p>
+      </div>
+      
+      <div class="mb-8">
+      <p class="mb-2 font-medium">También puedes escribirme directamente a:</p>
+      <a href="mailto:contacto@bichitosdelana.com" class="text-primary hover:text-primary-dark transition-colors block">
+        contacto@bichitosdelana.com
+      </a>
+      </div>
+      
+      <div class="bg-primary/10 p-4 rounded-xl flex items-start gap-3">
+      <!-- <MessageSquare size={24} class="text-primary mt-1" /> -->
+      <div>
+        <p class="font-medium">¿Quieres un producto personalizado?</p>
+        <p class="text-sm text-brown-light">
+        Cuéntame tus ideas y juntos podemos crear algo único y especial.
+        </p>
+      </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>    
