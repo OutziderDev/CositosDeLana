@@ -1,20 +1,12 @@
 # Cositos de Lana 🧶✨
 
-**Sitio web**: [Cositos De Lana](https://cositos-de-lana.vercel.app/)
+**Visita el sitio web**: [Cositos De Lana](https://cositos-de-lana.vercel.app/)
 
-Cositos de Lana es una landing page artesanal hecha para presentar el emprendimiento de Guadalupe, una joven apasionada por el crochet. En este espacio comparte sus creaciones hechas a mano: **amigurumis, bolsos tejidos y decoración para el hogar**, todas diseñadas con dedicación y mucho amor.
-
-![Cositos De Lana](hero.png)
+Cositos de Lana es una landing page hecha para presentar el emprendimiento de Guadalupe, una joven apasionada por el crochet. En este espacio comparte sus creaciones hechas a mano: **amigurumis, bolsos tejidos y decoración para el hogar**, todas diseñadas con dedicación y mucho amor.
 
 > 🌸 “Cada pieza es única y busca llenar de calidez y color tu espacio.”
 
-<!-- ## 🧩 Secciones del sitio
-
-- **Inicio**: Hero ilustrado de bienvenida con acceso directo a productos y cotización.
-- **Productos**: Muestra los últimos proyectos tejidos por Guadalupe.
-- **Sobre mí**: Breve historia del emprendimiento y su inspiración.
-- **Contactame**: Formulario para enviar mensajes directamente por email.
-- **Footer**: Información adicional del sitio. -->
+![Cositos De Lana](hero.png)
 
 ## 🛠 Tecnologías utilizadas
 
