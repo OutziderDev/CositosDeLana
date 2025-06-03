@@ -1,6 +1,4 @@
 ---
-import { Image } from "astro:assets"
-import crafterImage from "../../public/images/crafter.webp"
 ---
 <section id="about" class="py-20 md:py-40 w-full bg-more-light mask-t-from-80% relative overflow-hidden">
   <div class="max-w-6xl mx-auto pt-50 p-4 md:p-2 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -8,7 +6,7 @@ import crafterImage from "../../public/images/crafter.webp"
     <div class="order-2 md:order-1 relative w-full">
       <div class="absolute -left-5 -top-5 mask-radial-from-80% bg-crema/70 size-20 rounded-full"></div>
       <div class="absolute -right-5 -bottom-5 size-30 bg-transparent border-5 border-dashed border-pinky-regular rounded-full animation-rodar"></div>
-      <Image src={crafterImage} class="h-[660px] w-full bg-white p-2 rounded-4xl object-cover shadow-xl"  alt="Imagen de la artesana" />
+      <img src="images/crafter.webp" class="h-[660px] w-full bg-white p-2 rounded-4xl object-cover shadow-xl"  alt="Imagen de la artesana">
     </div>
 
     <!-- Descripcion -->
@@ -24,49 +22,54 @@ import crafterImage from "../../public/images/crafter.webp"
       </div>
     </div>
   </div>
+
+  <!-- Decoradores -->
+  <div class="absolute h-20 w-20 bg-pinky-dark rounded-full blur-lg right-20 top-20 animate-levitar"></div>
+  <div class="absolute h-20 w-20 bg-pinky-dark rounded-full blur-3xl bottom-15 left-15 animate-levitar"></div>
+
 </section>
 
 <style>
   .animate-levitar{
-    animation: levitar 12s infinite ease-in-out;
+    animation: levitar 8s infinite ease-in-out;
   }
   .animation-rodar {
     animation: animate-rodar 6s ease-in-out infinite alternate;
   }
 
   @keyframes levitar {
-  0% {
-    transform: translate(0, 0);
+    0% {
+      transform: translate(0, 0);
+    }
+    15% {
+      transform: translate(-20px, -20px); /* esquina sup izquierda */
+    }
+    30% {
+      transform: translate(-13px, -12px);   /* casi al centro */
+    }
+    45% {
+      transform: translate(20px, -20px);  /* esquina sup derecha */
+    }
+    60% {
+      transform: translate(13px, 11px);     /* casi al centro */
+    }
+    75% {
+      transform: translate(20px, 20px);   /* esquina inf derecha */
+    }
+    87% {
+      transform: translate(-12px, 15px);    /* casi centro otra vez */
+    }
+    100% {
+      transform: translate(0px, 0px);  /* esquina inf izquierda */
+    }
   }
-  15% {
-    transform: translate(-10px, -10px); /* esquina sup izquierda */
-  }
-  30% {
-    transform: translate(-3px, -2px);   /* casi al centro */
-  }
-  45% {
-    transform: translate(10px, -10px);  /* esquina sup derecha */
-  }
-  60% {
-    transform: translate(3px, 1px);     /* casi al centro */
-  }
-  75% {
-    transform: translate(10px, 10px);   /* esquina inf derecha */
-  }
-  87% {
-    transform: translate(-2px, 5px);    /* casi centro otra vez */
-  }
-  100% {
-    transform: translate(0px, 0px);  /* esquina inf izquierda */
-  }
-}
 
-@keyframes animate-rodar {
-  0% {
-    transform: rotate(0deg);  
+  @keyframes animate-rodar {
+    0% {
+      transform: rotate(0deg);  
+    }
+    100% {
+      transform: rotate(180deg);
+    }
   }
-  100% {
-    transform: rotate(180deg);
-  }
-}
 </style>
