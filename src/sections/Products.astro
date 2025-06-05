@@ -91,7 +91,7 @@ import {productos} from '../data.ts'
     animation: fadeIn 0.3s ease-in-out;
   }
   .animate-fade-in-left {
-    animation: fadeInLeft 0.3s both;
+    animation: fadeInLeft 0.3s ease-out both ;
   }
   @keyframes fadeIn {
     0% {
@@ -99,7 +99,7 @@ import {productos} from '../data.ts'
       transform: translate( 0, 100px);
     }
     
-    100$ {
+    100% {
       opacity: 1;
       transform: translate 0;
     }
@@ -108,11 +108,11 @@ import {productos} from '../data.ts'
   @keyframes fadeInLeft {
     0% {
       opacity: 0;
-      transform: translate(100px, 0);
+      transform: translate(-100px, 0px);
     }
     100% {
       opacity:1;
-      transform: translate(0);
+      transform: translate(0,0);
     }
   }
 </style>
