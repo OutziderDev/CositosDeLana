@@ -16,8 +16,9 @@
       </div>
 
       <!-- Ilustracion Cositos -->
-      <div class="relative w-full md:w-2/4">
-        <img src="/images/lanaRosa.webp" class="absolute scale-50 animacion-flote z-0" alt="">
+      <div class="relative w-full md:w-2/4 ">
+        <img src="/images/lanaRosa.webp" class="absolute scale-50 animacion-flote1 z-0" alt="">
+        <img src="/images/lanaVerde.webp" class="absolute size-10 z-0 left-5 top-15 animacion-flote-linear" alt="">
         <img src="/images/ilustracion.png" class="relative object-contain aspect-square w-full z-20" alt="">
       </div>
     </div>
@@ -30,8 +31,11 @@
 </section>
 
 <style>
-  .animacion-flote {
+  .animacion-flote1 {
     animation: flotar1 15s infinite alternate;
+  }
+  .animacion-flote-linear {
+    animation: flotar-linear 10s infinite alternate ease-in-out ;
   }
 
   @keyframes flotar1 {
@@ -43,6 +47,16 @@
     }
     100% {
       transform: translate(100px,0px);
+    }
+  }
+
+  @keyframes flotar-linear {
+    0% {
+      transform: translate(0,0) rotate(0deg);
+    }
+    
+    100% {
+      transform: translate(0px, 200px) rotate(180deg);
     }
   }
 </style>
