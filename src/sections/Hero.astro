@@ -17,7 +17,8 @@
 
       <!-- Ilustracion Cositos -->
       <div class="relative w-full md:w-2/4">
-        <img src="/images/ilustracion.png" class="object-contain aspect-square w-full" alt="">
+        <img src="/images/lanaRosa.webp" class="absolute scale-50 animacion-flote z-0" alt="">
+        <img src="/images/ilustracion.png" class="relative object-contain aspect-square w-full z-20" alt="">
       </div>
     </div>
   </div>
@@ -27,3 +28,21 @@
       <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
   </svg>
 </section>
+
+<style>
+  .animacion-flote {
+    animation: flotar1 15s infinite alternate;
+  }
+
+  @keyframes flotar1 {
+    0% {
+      transform: translate(-60px,0px);
+    }
+    50%{
+      transform: translate(0, 350px) rotate(180deg);
+    }
+    100% {
+      transform: translate(100px,0px);
+    }
+  }
+</style>
