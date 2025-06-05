@@ -9,7 +9,7 @@ import {productos} from '../data.ts'
     <p class="text-center text-text-dark text-xl mt-10 font-nunito">Cada pieza está hecha a mano con materiales de alta calidad, pensando en los <br> detalles que hacen especial cada creación.</p>
     
     <!-- Menu Tabs -->
-    <div id="tabs" class="grid grid-cols-1 md:grid-cols-4 gap-4 items-center justify-center mt-10 font-nunito">
+    <div id="tabs" class="grid grid-cols-1 md:grid-cols-4 gap-4 items-center justify-center mt-10 font-nunito w-full">
       <button   
         class="tab-btn px-5 py-2 rounded-full text-xl transition-all text-white shadow-md bg-pinky-regular hover:bg-pinky-dark cursor-pointer"
         data-tab="todos">
@@ -36,9 +36,9 @@ import {productos} from '../data.ts'
     </div>
 
     <!-- Tab Contents -->
-    <div id="tab-contents" class="mt-10">
+    <div id="tab-contents" class="mt-10 w-full">
       <!-- Contenido de todos los productos -->
-      <section class="tab-content animate-fade-in-top" data-content="todos">
+      <section class="tab-content animate-fade-in-top w-full" data-content="todos">
         <div id="contenedor-todos" class="grid grid-cols-1 md:grid-cols-3 gap-8">
           {
             productos.map( producto => (
@@ -49,7 +49,7 @@ import {productos} from '../data.ts'
       </section>
 
       <!-- Contenido de Solo Amigurumis -->
-      <section class="tab-content hidden animate-fade-in-left" data-content="amigurumis">
+      <section class="tab-content hidden animate-fade-in-left w-full" data-content="amigurumis">
         <div id="contenedor-amigurumis" class="grid grid-cols-1 md:grid-cols-3 gap-8">
           {
             productos.filter( producto => producto.categoria === 'Amigurumis').map( producto => (
@@ -60,7 +60,7 @@ import {productos} from '../data.ts'
       </section>
 
       <!-- Aquí va el contenido de Bolsos -->
-      <section class="tab-content hidden animate-fade-in-left" data-content="bolsos">
+      <section class="tab-content hidden animate-fade-in-left w-full" data-content="bolsos">
         <div id="contenedor-bolsos" class="grid grid-cols-1 md:grid-cols-3 gap-8">
           {
             productos.filter( producto => producto.categoria === 'Bolsos').map( producto => (
@@ -72,7 +72,7 @@ import {productos} from '../data.ts'
 
 
       <!-- Aquí va el contenido de Decoración -->
-      <section class="tab-content hidden animate-fade-in-left" data-content="decoracion">
+      <section class="tab-content hidden animate-fade-in-left w-full" data-content="decoracion">
         <div id="contenedor-decoracion" class="grid grid-cols-1 md:grid-cols-3 gap-8">
           {
             productos.filter( producto => producto.categoria === 'Decoración').map( producto => (
