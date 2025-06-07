@@ -1,16 +1,15 @@
 ---
 
 ---
-
-<header class="fixed top-0 z-50 h-20 w-full select-none overflow-hidden p-2">
-  <div class="flex justify-between max-w-6xl mx-auto h-full items-center">
+<header class="fixed top-0 z-50 h-20 w-full select-none">
+  <div class="max-w-6xl mx-auto h-full flex justify-between items-center p-2">
     <div class="text-4xl md:text-5xl font-caveat text-pinky-regular ">
       Cositos de Lana
     </div>
 
-    <div class="md:hidden flex items-center justify-center mr-2">
+    <button id="menu-boton" aria-label="Abrir menú de navegación" class="md:hidden flex items-center justify-center mr-2 cursor-pointer">
       <svg  xmlns="http://www.w3.org/2000/svg"  class="h-6 w-6 stroke-pinky-regular hover:stroke-pinky-dark cursor-pointer" viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
-    </div>
+    </button>
 
     <nav class="md:flex hidden gap-10 text-xl text-text-dark [&>a:hover]:text-pinky-dark font-nunito">
       <a href="/#hero" class="group">
@@ -31,13 +30,67 @@
       </a>
     </nav>
   </div>
+
+  <div id="menu-movil" role="navigation" aria-label="Menú móvil"  class="md:hidden hidden mt-0 bg-pinky-dark w-full h-screen pt-20 mobile-animation">
+    <nav class="text-center text-white text-2xl flex flex-col gap-4">
+      <a href="/#hero" class="group">
+        Inicio
+        <span class="block w-0 group-hover:w-full transition-all duration-300 h-0.5 bg-pinky-light"></span>
+      </a>
+      <a href="/#products" class="group">
+        Productos
+        <span class="block w-0 group-hover:w-full transition-all duration-300 h-0.5 bg-pinky-light"></span>
+      </a>
+      <a href="/#about" class="group">
+        Sobre Mí
+        <span class="block w-0 group-hover:w-full transition-all duration-300 h-0.5 bg-pinky-light"></span>
+      </a>
+      <a href="/#contactame" class="group">
+        Contactame        
+        <span class="block w-0 group-hover:w-full transition-all duration-300 h-0.5 bg-pinky-light"></span>
+      </a>
+    </nav>
+  </div>
 </header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", ()=> {
+    const boton = document.getElementById('menu-boton');
+    const menu = document.getElementById('menu-movil');
+
+    boton?.addEventListener('click', () => {
+      menu?.classList.toggle('hidden')
+    })
+
+    const links = document.querySelectorAll("#menu-movil a")
+    links.forEach( link => {
+      link.addEventListener('click', () => {
+        menu?.classList.toggle('hidden')
+      })
+    })
+  })
+</script>
 
 <style>
   header {
     animation: header-blur-scroll 0.3s linear forwards;
     animation-timeline: scroll();
     animation-range: 0 350px;
+  }
+
+  .mobile-animation {
+    animation: moveToRigh 0.3s ease-in-out;
+  }
+
+  @keyframes moveToRigh {
+    0% {
+      opacity: 0;
+      transform: translate(300px,0);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0,0);
+    }
   }
 
   @keyframes header-blur-scroll {
