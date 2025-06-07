@@ -32,3 +32,32 @@
   --color-crema: #FEF9F3;
   
 }
+
+
+/* body {
+  --sb-track-color: #f8c4d8;
+  --sb-thumb-color: #e79bb1;
+  --sb-size: 10px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 3px;
+  border: 1px solid #ffffff;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+} */
