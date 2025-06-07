@@ -6,7 +6,7 @@ Cositos de Lana es una landing page hecha para presentar el emprendimiento de Gu
 
 > 🌸 “Cada pieza es única y busca llenar de calidez y color tu espacio.”
 
-![Cositos De Lana](hero.png)
+![Cositos De Lana](https://cositos-de-lana.vercel.app/og-image.jpg)
 
 ## 🛠 Tecnologías utilizadas
 
