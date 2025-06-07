@@ -6,7 +6,7 @@
     <div class="flex flex-col md:flex-row gap-8 ">
       <!-- Info Cositos -->
       <div class="flex flex-col justify-center md:w-2/4">
-        <h1 class="font-caveat text-center md:text-left text-7xl md:text-8xl text-pinky-dark font-bold md:animate-bounce transition-normal">Cositos de Lana</h1>
+        <h1 class="font-caveat text-center md:text-left text-7xl md:text-8xl text-pinky-dark title-animation font-bold transition-normal">Cositos de Lana</h1>
         <p class="text-text-light text-center md:text-left font-nunito text-2xl my-5 font-bold sepia-50">Tejidos únicos hechos con amor y dedicación ✨</p>
         <p class="text-pretty text-center md:text-left  text-lg font-nunito font-bold text-text-dark">Amigurumis, bolsos artesanales y decoración para el hogar. Cada pieza es única y especialmente diseñada para llenar de calidez y color tu espacio.</p>
         <div class="flex flex-col md:flex-row gap-4 mt-10">
@@ -69,6 +69,18 @@
   }
   .animacion-flote-linear {
     animation: flotar-linear 10s infinite alternate ease-in-out ;
+  }
+  .title-animation {
+    animation: title-float 4s ease infinite alternate;
+  }
+
+  @keyframes title-float {
+    0% {
+      transform: translateY(-30px);
+    }
+    100% {
+      transform: translateY(15px);
+    }
   }
 
   @keyframes flotar1 {
