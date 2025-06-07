@@ -2,7 +2,7 @@
 
 @font-face{
   font-family: 'Caveat';
-  src: url('../assets/fonts/Caveat.woff2') format('woff2');
+  src: url('/fonts/Caveat.woff2') format('woff2');
   font-style: normal;
   font-weight: 400 700;
   font-display: swap;
@@ -10,7 +10,7 @@
 
 @font-face{
   font-family: 'Nunito';
-  src: url('../assets/fonts/Nunito.woff2') format('woff2');
+  src: url('/fonts/Nunito.woff2') format('woff2');
   font-size: normal;
   font-display: swap;
 }
