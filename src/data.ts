@@ -78,7 +78,7 @@ export const productos: Producto[] = [
     foto: "sobremesa.webp",
     tamaño: 22,
     descripcion: "Sobremesa tejido a mano, ideal para decorar tu hogar con un toque único.",
-    categoria: "Decoración",
+    categoria: "Accesorios",
     precio: 18.50
   }
 ] 

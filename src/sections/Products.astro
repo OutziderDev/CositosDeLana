@@ -1,6 +1,6 @@
 ---
 import ProductCard from '../components/ProductCard.astro'
-import {productos} from '../data.ts'
+import {productos} from '../data'
 ---
 
 <section id="products" class="mt-10 md:mt-0 w-full">
@@ -31,7 +31,7 @@ import {productos} from '../data.ts'
       <button   
         class="tab-btn px-5 py-2 rounded-full text-xl transition-all shadow-md bg-slate-100 hover:bg-pinky-regular hover:text-white cursor-pointer"
         data-tab="decoracion">
-        Decoración
+        Accesorios
       </button>
     </div>
 
@@ -75,7 +75,7 @@ import {productos} from '../data.ts'
       <section class="tab-content hidden animate-fade-in-left w-full" data-content="decoracion">
         <div id="contenedor-decoracion" class="grid grid-cols-1 md:grid-cols-3 gap-8">
           {
-            productos.filter( producto => producto.categoria === 'Decoración').map( producto => (
+            productos.filter( producto => producto.categoria === 'Accesorios').map( producto => (
               <ProductCard product={producto}/>
             ))
           }
