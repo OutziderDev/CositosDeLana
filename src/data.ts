@@ -2,6 +2,22 @@ import type { Producto } from "./types/Producto"
 
 export const productos: Producto[] = [
   {
+    nombre: "Llavero de Chimuelo",
+    foto: "chimuelollavero.webp",
+    tamaño: 4,
+    descripcion: "Llaveros de chimuelo y furia diurna para que te acompañen y protejan en todo lugar",
+    categoria: "Accesorios",
+    precio: 5.00
+  },
+  {
+   nombre:"Dino Llaveros",
+   foto: "dinollavero.webp",
+   tamaño: 3,
+   descripcion: "Tierno par de dino llaveros que pueden compartir un tierno beso cada vez que los juntas.",
+   categoria: "Accesorios",
+   precio: 10
+  },
+  {
     nombre:"Spiderman",
     foto: "spidy.webp",
     tamaño: 4,
@@ -64,7 +80,8 @@ export const productos: Producto[] = [
     descripcion: "Bolso de tira tejido a mano, ideal para llevar tus accesorios con estilo.",
     categoria: "Bolsos",
     precio: 15.00
-  },
+  }
+  /* ,
   {
     nombre: "Osito Personalizado",
     foto: "bear.webp",
@@ -72,13 +89,13 @@ export const productos: Producto[] = [
     descripcion: "Tierno osito que cambia de ropa, segun lo personalices",
     categoria: "Amigurumis",
     precio: 6
-  },
-  {
+  }, */
+  /* {
     nombre: "Sobremesa clásico",
     foto: "sobremesa.webp",
     tamaño: 22,
     descripcion: "Sobremesa tejido a mano, ideal para decorar tu hogar con un toque único.",
     categoria: "Accesorios",
     precio: 18.50
-  }
+  } */
 ] 
