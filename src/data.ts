@@ -2,6 +2,14 @@ import type { Producto } from "./types/Producto"
 
 export const productos: Producto[] = [
   {
+    nombre: "Mini Draco",
+    foto: "minidraco.webp",
+    tamaño: 4,
+    descripcion: "El último de su linaje, reducido por magia antigua al tamaño de un llavero, para custodiar tus llaves.",
+    categoria: "Accesorios",
+    precio: 10.00
+  },
+  {
     nombre: "Llavero de Chimuelo",
     foto: "chimuelollavero.webp",
     tamaño: 4,
