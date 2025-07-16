@@ -1,6 +1,14 @@
-import type { Producto } from "./types/Producto"
+import type { Producto } from "../types/Producto"
 
 export const productos: Producto[] = [
+  {
+    nombre: "Kamado Nezuko",
+    foto: "nezukoamigurumi.webp",
+    tamaño: 8,
+    descripcion: "La gran cazadora de demonios ya está aquí: ¡la adorable Nezuko Kamado de Kimetsu no Yaiba👺!",
+    categoria: "Amigurumis",
+    precio: 15.00
+  },
   {
     nombre: "Mini Draco",
     foto: "minidraco.webp",
