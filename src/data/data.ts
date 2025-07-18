@@ -63,7 +63,7 @@ export const productos: Producto[] = [
     tamaño: 3,
     descripcion: "Llavero personalizado de un Garrafon de agua, ideal para acompañar tus llaves y darle un toque divertido.",
     categoria: "Accesorios",
-    precio: 7.00
+    precio: 6.00
   },
   {
     nombre: "Bunny",
@@ -87,6 +87,14 @@ export const productos: Producto[] = [
     tamaño: 4,
     descripcion: "Pareja de amigurumis de Stitch y Angel, perfectos para los amantes de Disney.",
     categoria: "Amigurumis",
+    precio: 8.00
+  },
+  {
+    nombre: "LLavero de Saxofón",
+    foto: "saxofonllavero.webp",
+    tamaño: 4,
+    descripcion: "Llavero personalizado de un saxofón, el compañero ideal para los amantes de la música.",
+    categoria: "Accesorios",
     precio: 8.00
   },
   {
@@ -122,12 +130,5 @@ export const productos: Producto[] = [
     categoria: "Amigurumis",
     precio: 6
   }, */
-  /* {
-    nombre: "Sobremesa clásico",
-    foto: "sobremesa.webp",
-    tamaño: 22,
-    descripcion: "Sobremesa tejido a mano, ideal para decorar tu hogar con un toque único.",
-    categoria: "Accesorios",
-    precio: 18.50
-  } */
+  
 ] 
