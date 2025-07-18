@@ -18,6 +18,14 @@ export const productos: Producto[] = [
     precio: 10.00
   },
   {
+    nombre: "Son Goku - Jonbi",
+    foto: "jonbi.webp",
+    tamaño: 4,
+    descripcion: "El Jonbi, legendario Biju de 4 colas esta aquí para brindarte poder y acompañarte en cada aventura.",
+    categoria: "Amigurumis",
+    precio: 10.00
+  },
+  {
     nombre: "Llavero de Chimuelo",
     foto: "chimuelollavero.webp",
     tamaño: 4,
