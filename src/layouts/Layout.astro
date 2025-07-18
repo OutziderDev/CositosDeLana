@@ -2,6 +2,7 @@
 import Footer from "../sections/Footer.astro";
 import Header from "../sections/Header.astro";
 import "../styles/global.css"
+import  Analytics  from "@vercel/analytics/astro";
 ---
 
 <!doctype html>
@@ -18,15 +19,18 @@ import "../styles/global.css"
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
 
     <!-- Meta Descripcion -->
-    <meta name="description" content="Cositos de Lana es un emprendimiento de tejidos hechos a mano: amigurumis, bolsos y decoración artesanal. Cada pieza es única, creada con amor y dedicación en crochet.">
+    <meta name="description" content="Cositos de Lana es un emprendimiento de tejidos hechos a mano: amigurumis, bolsos y accesorios artesanales. Cada pieza es única, creada con amor y dedicación en crochet.">
     <link rel="canonical" href="https://cositos-de-lana.vercel.app/">
+
+    <!-- Metricas para Web Analiticas de Vercel -->
+    <Analytics />
 
     <!-- Meta Etiquetas -->
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://cositos-de-lana.vercel.app/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Cositos De Lana">
-    <meta property="og:description" content="Cositos de Lana es un emprendimiento de tejidos hechos a mano: amigurumis, bolsos y decoración artesanal. Cada pieza es única, creada con amor y dedicación en crochet.">
+    <meta property="og:description" content="Cositos de Lana es un emprendimiento de tejidos hechos a mano: amigurumis, bolsos y accesorios artesanales. Cada pieza es única, creada con amor y dedicación en crochet.">
     <meta property="og:image" content="https://cositos-de-lana.vercel.app/og-image.jpg">
 
     <!-- Twitter Meta Tags -->
