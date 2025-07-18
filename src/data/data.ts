@@ -58,6 +58,14 @@ export const productos: Producto[] = [
     precio: 10.00
   },
   {
+    nombre: "Llavero de Garrafon ",
+    foto: "garrafon.webp",
+    tamaño: 3,
+    descripcion: "Llavero personalizado de un Garrafon de agua, ideal para acompañar tus llaves y darle un toque divertido.",
+    categoria: "Accesorios",
+    precio: 7.00
+  },
+  {
     nombre: "Bunny",
     foto: "bunny.webp",
     tamaño: 6,
