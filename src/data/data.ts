@@ -1,14 +1,14 @@
 import type { Producto } from "../types/Producto"
 
 export const productos: Producto[] = [
-  /* {
+  {
     nombre: "Shinobu Kocho",
     foto: "shinobu.webp",
     tamaño: 6,
     descripcion: "La cazadora de insectos más elegante y letal ha llegado: ¡la encantadora Shinobu Kocho de Kimetsu no Yaiba🦋!",
     categoria: "Amigurumis",
     precio: 10.00
-  }, */
+  },
   {
     nombre: "Kamado Nezuko",
     foto: "nezukoamigurumi.webp",
