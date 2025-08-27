@@ -1,6 +1,14 @@
 import type { Producto } from "../types/Producto"
 
 export const productos: Producto[] = [
+  /* {
+    nombre: "Shinobu Kocho",
+    foto: "shinobu.webp",
+    tamaño: 6,
+    descripcion: "La cazadora de insectos más elegante y letal ha llegado: ¡la encantadora Shinobu Kocho de Kimetsu no Yaiba🦋!",
+    categoria: "Amigurumis",
+    precio: 10.00
+  }, */
   {
     nombre: "Kamado Nezuko",
     foto: "nezukoamigurumi.webp",
@@ -8,6 +16,14 @@ export const productos: Producto[] = [
     descripcion: "La gran cazadora de demonios ya está aquí: ¡la adorable Nezuko Kamado de Kimetsu no Yaiba👺!",
     categoria: "Amigurumis",
     precio: 15.00
+  },
+  {
+    nombre: "Monederos Personalizado",
+    foto: "monedero.webp",
+    tamaño: 4,
+    descripcion: "Monederos personalizados tejidos a mano, ideales para llevar tus monedas y pequeños objetos con estilo.",
+    categoria: "Accesorios",
+    precio: 6.00
   },
   {
     nombre: "Mini Draco",
