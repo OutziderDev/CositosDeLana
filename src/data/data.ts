@@ -58,6 +58,14 @@ export const productos: Producto[] = [
    precio: 10
   },
   {
+    nombre: `Bolso de Crochet 13"x11"`,
+    foto: "bolso-13x11.webp",
+    tamaño: 13,
+    descripcion: "Elegante bolso de 13x11 pulgadas, ideal para llevar tus artículos y lucir con estilo en cada viaje.",
+    categoria: "Bolsos",
+    precio: 15
+  },
+  {
     nombre:"Spiderman",
     foto: "spidy.webp",
     tamaño: 4,
