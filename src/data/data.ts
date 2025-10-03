@@ -2,6 +2,14 @@ import type { Producto } from "../types/Producto"
 
 export const productos: Producto[] = [
   {
+    nombre: "Virgen La Milagrosa",
+    foto: "virgenmilagrosa.webp",
+    tamaño: 8,
+    descripcion: "La Virgen Milagrosa, símbolo de fe y esperanza, ahora en un amigurumi tejido a mano con amor y devoción.",
+    categoria: "Amigurumis",
+    precio: 17.00,
+  },
+  {
     nombre: "Shinobu Kocho",
     foto: "shinobu.webp",
     tamaño: 6,
