@@ -18,6 +18,14 @@ export const productos: Producto[] = [
     precio: 10.00
   },
   {
+    nombre: "Neko Bolso",
+    foto: "nekobolso.webp",
+    tamaño: 8,
+    descripcion: "Bolso tejido a mano con diseño de gato, ideal para llevar tus pertenencias con estilo y ternura.",
+    categoria: "Bolsos",
+    precio: 10.00
+  },
+  {
     nombre: "Kamado Nezuko",
     foto: "nezukoamigurumi.webp",
     tamaño: 8,
