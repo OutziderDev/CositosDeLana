@@ -17,6 +17,14 @@ export const productos: Producto[] = [
     categoria: "Amigurumis",
     precio: 17.00,
   },
+  /* {
+    nombre: "El Payaso Plim Plim",
+    foto: "plimplim.webp",
+    tamaño: 6,
+    descripcion: "El tierno payaso Plim Plim ha llegado para alegrar tus días con su sonrisa y encanto inigualable 🤡!",
+    categoria: "Amigurumis",
+    precio: 10.00
+  } */
   {
     nombre: "Shinobu Kocho",
     foto: "shinobu.webp",
