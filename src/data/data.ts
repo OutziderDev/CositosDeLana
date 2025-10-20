@@ -2,6 +2,14 @@ import type { Producto } from "../types/Producto"
 
 export const productos: Producto[] = [
   {
+    nombre: "Inosuke Hashibira",
+    foto: "inosukechiby.webp",
+    tamaño: 8,
+    descripcion: "El feroz cazador de demonios con máscara de jabalí aparece: ¡el adorable Inosuke de Kimetsu no Yaiba🐗!",
+    categoria: "Accesorios",
+    precio: 13.00
+  },
+  {
     nombre: "Virgen La Milagrosa",
     foto: "virgenmilagrosa.webp",
     tamaño: 8,
