@@ -13,18 +13,18 @@ export const productos: Producto[] = [
     nombre: "Virgen La Milagrosa",
     foto: "virgenmilagrosa.webp",
     tamaño: 8,
-    descripcion: "La Virgen Milagrosa, símbolo de fe y esperanza, ahora en un amigurumi tejido a mano con amor y devoción.",
+    descripcion: "La Virgen Milagrosa, símbolo de fe y esperanza, ahora en un amigurumi tejido a mano con amor y devoción. 🙏✨",
     categoria: "Amigurumis",
     precio: 17.00,
   },
-  /* {
+  {
     nombre: "El Payaso Plim Plim",
     foto: "plimplim.webp",
-    tamaño: 6,
+    tamaño: 5,
     descripcion: "El tierno payaso Plim Plim ha llegado para alegrar tus días con su sonrisa y encanto inigualable 🤡!",
     categoria: "Amigurumis",
     precio: 10.00
-  } */
+  }, 
   {
     nombre: "Shinobu Kocho",
     foto: "shinobu.webp",
