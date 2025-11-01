@@ -2,6 +2,14 @@ import type { Producto } from "../types/Producto"
 
 export const productos: Producto[] = [
   {
+    nombre: "Frankisito",
+    foto: "frankisito.webp",
+    tamaño: 6,
+    descripcion: "Una adorable fusión entre Frankenstein y Cositos: ¡dos almas tejidas en un solo amigurumi! 🐰🐶",
+    categoria: "Amigurumis",
+    precio: 15.00
+  },
+  {
     nombre: "Inosuke Hashibira",
     foto: "inosukechiby.webp",
     tamaño: 8,
