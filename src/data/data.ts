@@ -2,6 +2,14 @@ import type { Producto } from "../types/Producto"
 
 export const productos: Producto[] = [
   {
+    nombre: "Virgen de Guadalupe",
+    foto: "virgen-guadalupe.webp",
+    tamaño: 6,
+    descripcion: "La Virgen de Guadalupe, emblema de amor y consuelo, ahora en amigurumi para proteger tu hogar. ✨🌹🙏",
+    categoria: "Amigurumis",
+    precio: 17.00,
+  },
+  {
     nombre: "Frankisito",
     foto: "frankisito.webp",
     tamaño: 6,
@@ -10,20 +18,20 @@ export const productos: Producto[] = [
     precio: 15.00
   },
   {
+    nombre: "Virgen La Milagrosa",
+    foto: "virgen-milagrosa.webp",
+    tamaño: 8,
+    descripcion: "La Virgen Milagrosa, símbolo de fe y esperanza, ahora en un amigurumi tejido a mano con amor y devoción. 🙏✨",
+    categoria: "Amigurumis",
+    precio: 17.00,
+  },
+  {
     nombre: "Inosuke Hashibira",
     foto: "inosukechiby.webp",
     tamaño: 8,
     descripcion: "El feroz cazador de demonios con máscara de jabalí aparece: ¡el adorable Inosuke de Kimetsu no Yaiba🐗!",
     categoria: "Accesorios",
     precio: 13.00
-  },
-  {
-    nombre: "Virgen La Milagrosa",
-    foto: "virgenmilagrosa.webp",
-    tamaño: 8,
-    descripcion: "La Virgen Milagrosa, símbolo de fe y esperanza, ahora en un amigurumi tejido a mano con amor y devoción. 🙏✨",
-    categoria: "Amigurumis",
-    precio: 17.00,
   },
   {
     nombre: "El Payaso Plim Plim",
