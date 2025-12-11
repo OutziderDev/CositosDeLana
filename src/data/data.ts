@@ -2,6 +2,14 @@ import type { Producto } from "../types/Producto"
 
 export const productos: Producto[] = [
   {
+    nombre: "Angelitos",
+    foto: "angelitos.webp",
+    tamaño: 6,
+    descripcion: "Dulces angelitos tejidos a mano, perfectos para decorar tus eventos más especiales. 👼✨",
+    categoria: "Amigurumis",
+    precio: 12.00,
+  },
+  {
     nombre: "Virgen de Guadalupe",
     foto: "virgen-guadalupe.webp",
     tamaño: 6,
