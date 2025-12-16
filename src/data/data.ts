@@ -18,6 +18,14 @@ export const productos: Producto[] = [
     precio: 17.00,
   },
   {
+    nombre: "Pally, el Pati Pollito",
+    foto: "pallyto.webp",
+    tamaño: 4,
+    descripcion: "¡Conoce a Pally, el pato pollito más adorable y divertido que alegrará tus días con su ternura! 🦆🐥",
+    categoria: "Amigurumis",
+    precio: 4.00
+  },
+  {
     nombre: "Frankisito",
     foto: "frankisito.webp",
     tamaño: 6,
