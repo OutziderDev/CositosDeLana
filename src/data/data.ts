@@ -18,7 +18,7 @@ export const productos: Producto[] = [
     precio: 17.00,
   },
   {
-    nombre: "Cosito el Osito",
+    nombre: "Cosito, el Osito",
     foto: "cosito.webp",
     tamaño: 8,
     descripcion: "El osito más tierno y abrazable, hecho a mano con amor e hilo peludo, para llenar de dulzura tu vida. 🧸💕",
@@ -63,6 +63,14 @@ export const productos: Producto[] = [
     tamaño: 5,
     descripcion: "El tierno payaso Plim Plim ha llegado para alegrar tus días con su sonrisa y encanto inigualable 🤡!",
     categoria: "Amigurumis",
+    precio: 10.00
+  },
+  {
+    nombre: "Arbolito de Navidad",
+    foto: "arbolito-navidad.webp",
+    tamaño: 6,
+    descripcion: "Decora tu hogar con un toque artesanal con nuestro encantador arbolito de Navidad tejido a mano. 🎄✨",
+    categoria: "Accesorios",
     precio: 10.00
   }, 
   {
