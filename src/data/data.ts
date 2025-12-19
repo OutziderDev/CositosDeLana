@@ -18,6 +18,14 @@ export const productos: Producto[] = [
     precio: 17.00,
   },
   {
+    nombre: "Cosito el Osito",
+    foto: "cosito.webp",
+    tamaño: 8,
+    descripcion: "El osito más tierno y abrazable, hecho a mano con amor e hilo peludo, para llenar de dulzura tu vida. 🧸💕",
+    categoria: "Amigurumis",
+    precio: 12.00,
+  },
+  {
     nombre: "Pally, el Pati Pollito",
     foto: "pallyto.webp",
     tamaño: 4,
