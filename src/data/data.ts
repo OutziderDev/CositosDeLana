@@ -2,6 +2,14 @@ import type { Producto } from "../types/Producto"
 
 export const productos: Producto[] = [
   {
+    nombre: "Virgen Santa Librada",
+    foto: "santa-librada.webp",
+    tamaño: 4,
+    descripcion: "Protectora de causas difíciles, ahora en llavero amigurumi para brindarte su bendición y apoyo. 🙏✨",
+    categoria: "Accesorios",
+    precio: 8.00,
+  },
+  {
     nombre: "Angelitos",
     foto: "angelitos.webp",
     tamaño: 6,
