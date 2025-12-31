@@ -2,6 +2,14 @@ import type { Producto } from "../types/Producto"
 
 export const productos: Producto[] = [
   {
+    nombre: "Osito Personalizado",
+    foto: "arreglo-mathias.webp",
+    tamaño: 12,
+    descripcion: "Osito con arreglo personalizado, perfecto para decorar tu espacio con estilo y ternura. 🧸💕",
+    categoria: "Amigurumis",
+    precio: 20.00,
+  },
+  {
     nombre: "Teddy Bear",
     foto: "teddy-mrbean.webp",
     tamaño: 6,
