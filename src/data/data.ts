@@ -2,6 +2,14 @@ import type { Producto } from "../types/Producto"
 
 export const productos: Producto[] = [
   {
+    nombre: "Teddy Bear",
+    foto: "teddy-mrbean.webp",
+    tamaño: 6,
+    descripcion: "El osito de Mr Bean, tierno y abrazable, para que siempre tengas un amigo a tu lado. 🧸💕",
+    categoria: "Amigurumis",
+    precio: 10.00,
+  },
+  {
     nombre: "Virgen Santa Librada",
     foto: "santa-librada.webp",
     tamaño: 4,
