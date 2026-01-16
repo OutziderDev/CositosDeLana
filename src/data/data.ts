@@ -2,6 +2,14 @@ import type { Producto } from "../types/Producto"
 
 export const productos: Producto[] = [
   {
+    nombre: "baby angels",
+    foto: "twin-angels.webp",
+    tamaño: 6,
+    descripcion: "Dulces angelitos gemelos tejidos a mano, perfectos para decorar tus eventos más especiales. 👼✨",
+    categoria: "Amigurumis",
+    precio: 25.00,
+  },
+  {
     nombre: "Osito Personalizado",
     foto: "arreglo-mathias.webp",
     tamaño: 12,
