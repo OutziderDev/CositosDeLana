@@ -2,10 +2,18 @@ import type { Producto } from "../types/Producto"
 
 export const productos: Producto[] = [
   {
-    nombre: "baby angels",
+    nombre: "Patitos Enamorados",
+    foto: "patitos-unidos.webp",
+    tamaño: 2,
+    descripcion: "Patitos enamorados que siempre se acompañan, ideales para decorar tus llaves o mochila. 🦆💕",
+    categoria: "Accesorios",
+    precio: 8.00,
+  },
+  {
+    nombre: "Baby Angels",
     foto: "twin-angels.webp",
     tamaño: 6,
-    descripcion: "Dulces angelitos gemelos tejidos a mano, perfectos para decorar tus eventos más especiales. 👼✨",
+    descripcion: "Dulces par de gemelos tejidos a mano, perfectos para decorar tus eventos más especiales. 👼✨",
     categoria: "Amigurumis",
     precio: 25.00,
   },
