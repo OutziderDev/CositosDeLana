@@ -2,6 +2,14 @@ import type { Producto } from "../types/Producto"
 
 export const productos: Producto[] = [
   {
+    nombre: "Bolso de Verano",
+    foto: "bolso-verano.webp",
+    tamaño: 10,
+    descripcion: "Bolso tejido a mano, ideal para llevar tus accesorios en verano con estilo y frescura. ☀️🌊",
+    categoria: "Bolsos",
+    precio: 15.00,
+  },
+  {
     nombre: "Patitos Enamorados",
     foto: "patitos-unidos.webp",
     tamaño: 2,
