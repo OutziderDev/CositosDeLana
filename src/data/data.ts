@@ -2,6 +2,14 @@ import type { Producto } from "../types/Producto"
 
 export const productos: Producto[] = [
   {
+    nombre: "Snoopy y Emilio",
+    foto: "snoopy-emilio.webp",
+    tamaño: 4,
+    descripcion: "Snoopy y su amigo Emilio, tejidos a mano con amor y detalle, para llenar de ternura tu espacio. 🐶💖",
+    categoria: "Accesorios",
+    precio: 8.00,
+  },
+  {
     nombre: "Bolso de Verano",
     foto: "bolso-verano.webp",
     tamaño: 10,
