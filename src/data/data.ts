@@ -2,7 +2,15 @@ import type { Producto } from "../types/Producto"
 
 export const productos: Producto[] = [
   {
-    nombre: "Ramo de tulipanes",
+    nombre: "Himura Kenshin",
+    foto: "kenshin-batusai.webp",
+    tamaño: 6,
+    descripcion: "El legendario espadachín de la era Meiji ha llegado: ¡el adorable Himura Kenshin de Samurai X! 🗡️✨",
+    categoria: "Amigurumis",
+    precio: 16.00
+  },
+  {
+    nombre: "Ramo de Tulipanes",
     foto: "ramo-tulipanes.webp",
     tamaño: 8,
     descripcion: "Ramo de tulipanes tejidos a mano, perfectos para regalar o decorar tu hogar con un toque de color y alegría. 🌷✨",
