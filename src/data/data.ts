@@ -2,6 +2,14 @@ import type { Producto } from "../types/Producto"
 
 export const productos: Producto[] = [
   {
+    nombre: "Ramo de tulipanes",
+    foto: "ramo-tulipanes.webp",
+    tamaño: 8,
+    descripcion: "Ramo de tulipanes tejidos a mano, perfectos para regalar o decorar tu hogar con un toque de color y alegría. 🌷✨",
+    categoria: "Accesorios",
+    precio: 16.00,
+  },
+  {
     nombre: "Snoopy y Emilio",
     foto: "snoopy-emilio.webp",
     tamaño: 4,
@@ -128,7 +136,7 @@ export const productos: Producto[] = [
     descripcion: "Decora tu hogar con un toque artesanal con nuestro encantador arbolito de Navidad tejido a mano. 🎄✨",
     categoria: "Accesorios",
     precio: 10.00
-  }, 
+  },
   {
     nombre: "Shinobu Kocho",
     foto: "shinobu.webp",
@@ -186,12 +194,12 @@ export const productos: Producto[] = [
     precio: 5.00
   },
   {
-   nombre:"Dino Llaveros",
-   foto: "dinollavero.webp",
-   tamaño: 3,
-   descripcion: "Tierno par de dino llaveros que pueden compartir un tierno beso cada vez que los juntas.",
-   categoria: "Accesorios",
-   precio: 10
+    nombre: "Dino Llaveros",
+    foto: "dinollavero.webp",
+    tamaño: 3,
+    descripcion: "Tierno par de dino llaveros que pueden compartir un tierno beso cada vez que los juntas.",
+    categoria: "Accesorios",
+    precio: 10
   },
   {
     nombre: `Bolso de Crochet 13"x11"`,
@@ -202,7 +210,7 @@ export const productos: Producto[] = [
     precio: 15
   },
   {
-    nombre:"Spiderman",
+    nombre: "Spiderman",
     foto: "spidy.webp",
     tamaño: 4,
     descripcion: "Pequeño llavero inspirado en el super heroe Spider Man",
@@ -290,5 +298,5 @@ export const productos: Producto[] = [
     categoria: "Amigurumis",
     precio: 6
   }, */
-  
-] 
+
+]
