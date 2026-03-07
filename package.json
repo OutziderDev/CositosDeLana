@@ -11,7 +11,11 @@
   "dependencies": {
     "@tailwindcss/vite": "4.1.7",
     "@vercel/analytics": "1.5.0",
-    "astro": "5.16.6",
+    "astro": "5.18.0",
     "tailwindcss": "4.1.7"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.36.0",
+    "oxlint": "^1.51.0"
   }
 }
