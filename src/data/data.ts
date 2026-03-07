@@ -2,6 +2,14 @@ import type { Producto } from "../types/Producto"
 
 export const productos: Producto[] = [
   {
+    nombre: "Link de Zelda",
+    foto: "link-ia.webp",
+    tamaño: 6,
+    descripcion: "El héroe de Hyrule ha llegado: ¡el adorable Link de The Legend of Zelda! 🗡️✨",
+    categoria: "Amigurumis",
+    precio: 10.00
+  },
+  {
     nombre: "Himura Kenshin",
     foto: "kenshin-batusai.webp",
     tamaño: 6,
