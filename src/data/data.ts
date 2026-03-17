@@ -2,6 +2,15 @@ import type { Producto } from "../types/Producto";
 
 export const productos: Producto[] = [
   {
+    nombre: "Zhi el Ingenioso",
+    foto: "raton-zodiaco.webp",
+    tamaño: 6,
+    descripcion:
+      "El ratón más ingenioso del zodiaco chino, símbolo de inteligencia, astucia y curiosidad: ¡el adorable Zhi! 🐭✨",
+    categoria: "Amigurumis",
+    precio: 10.0,
+  },
+  {
     nombre: "Ji el Elegante",
     foto: "gallo-zodiaco.webp",
     tamaño: 6,
