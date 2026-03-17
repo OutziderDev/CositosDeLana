@@ -2,6 +2,15 @@ import type { Producto } from "../types/Producto";
 
 export const productos: Producto[] = [
   {
+    nombre: "Ji el Elegante",
+    foto: "gallo-zodiaco.webp",
+    tamaño: 6,
+    descripcion:
+      "El gallo más elegante del zodiaco chino, símbolo de confianza, orden y estilo: ¡el encantador Ji! 🐓✨",
+    categoria: "Amigurumis",
+    precio: 10.0,
+  },
+  {
     nombre: "Hou el Travieso",
     foto: "mono-zodiaco.webp",
     tamaño: 5,
