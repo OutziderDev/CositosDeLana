@@ -29,6 +29,14 @@ export const productos: Producto[] = [
     precio: 10.0,
   },
   {
+    nombre: "Hu el Valiente 🐯",
+    foto: "tigre-zodiaco.webp",
+    tamaño: 5,
+    descripcion:
+      "El tigre más valiente del zodiaco chino, símbolo de liderazgo y energía indomable: ¡el feroz Hu 🐯!",
+    precio: 10.0,
+  },
+  {
     nombre: "Link de Zelda",
     foto: "link-ia.webp",
     tamaño: 6,
