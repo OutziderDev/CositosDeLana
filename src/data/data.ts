@@ -11,13 +11,22 @@ export const productos: Producto[] = [
     precio: 10.0,
   },
   {
-    nombre: "Niu la Constante 🐮",
+    nombre: "Niu el Constante 🐮",
     foto: "vaca-zodiaco.webp",
-    tamaño: "6",
+    tamaño: 6,
     descripcion:
-      "La más tranquila del zodiaco chino, símbolo de disciplina y perseverancia: ¡la carismatica Niu! 🐮✨",
+      "El más tranquila del zodiaco chino, símbolo de disciplina y perseverancia: ¡el carismatico Niu! 🐮✨",
     categoria: "Amigurumis",
     precio: 10.0,
+  },
+  {
+    nombre: "Yue el Sereno ",
+    foto: "conejo-zodiaco.webp",
+    tamaño: 6,
+    descripcion:
+      "La coneja más gentil del zodiaco chino, símbolo de calma y dulzura natural: ¡La adorable Yue!🐰✨",
+    categoria: "Amigurumis",
+    precio: 12.0,
   },
   {
     nombre: "Ji el Elegante",
