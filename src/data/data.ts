@@ -11,6 +11,15 @@ export const productos: Producto[] = [
     precio: 10.0,
   },
   {
+    nombre: "Niu la Constante 🐮",
+    foto: "vaca-zodiaco.webp",
+    tamaño: "6",
+    descripcion:
+      "La más tranquila del zodiaco chino, símbolo de disciplina y perseverancia: ¡la carismatica Niu! 🐮✨",
+    categoria: "Amigurumis",
+    precio: 10.0,
+  },
+  {
     nombre: "Ji el Elegante",
     foto: "gallo-zodiaco.webp",
     tamaño: 6,
@@ -22,7 +31,7 @@ export const productos: Producto[] = [
   {
     nombre: "Hou el Travieso",
     foto: "mono-zodiaco.webp",
-    tamaño: 5,
+    tamaño: 6,
     descripcion:
       "El mono más travieso del zodiaco chino, símbolo de ingenio, alegría y picardía: ¡el adorable Hou! 🐒✨",
     categoria: "Amigurumis",
@@ -31,9 +40,10 @@ export const productos: Producto[] = [
   {
     nombre: "Hu el Valiente 🐯",
     foto: "tigre-zodiaco.webp",
-    tamaño: 5,
+    tamaño: 6,
     descripcion:
-      "El tigre más valiente del zodiaco chino, símbolo de liderazgo y energía indomable: ¡el feroz Hu 🐯!",
+      "El tigre más valiente del zodiaco chino, símbolo de liderazgo y energía indomable: ¡el feroz Hu! 🐯✨",
+    categoria: "Amigurumis",
     precio: 10.0,
   },
   {
