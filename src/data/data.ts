@@ -20,6 +20,15 @@ export const productos: Producto[] = [
     precio: 10.0,
   },
   {
+    nombre: "Gou el Leal",
+    foto: "perro-zodiaco.webp",
+    tamaño: 6,
+    descripcion:
+      "El noble guardial del zodiaco chino, símbolo de lealtat y protección: ¡el apapachable Gou! 🐶✨",
+    categoria: "Amigurumis",
+    precio: 12.0,
+  },
+  {
     nombre: "Yue el Sereno ",
     foto: "conejo-zodiaco.webp",
     tamaño: 6,
