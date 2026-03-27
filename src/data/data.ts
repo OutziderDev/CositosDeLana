@@ -29,6 +29,14 @@ export const productos: Producto[] = [
     precio: 12.0,
   },
   {
+    nombre: "She la Sabia",
+    foto: "snake-zodiaco",
+    tamaño: 6,
+    descripcion:
+      "La enigmática del zodiaco chino, símbolo de intuición y misterio: ¡la adorable She!🐍✨",
+    precio: 12.0,
+  },
+  {
     nombre: "Yue el Sereno ",
     foto: "conejo-zodiaco.webp",
     tamaño: 6,
