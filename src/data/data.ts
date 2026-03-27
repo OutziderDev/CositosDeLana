@@ -30,7 +30,7 @@ export const productos: Producto[] = [
   },
   {
     nombre: "She la Sabia",
-    foto: "snake-zodiaco",
+    foto: "snake-zodiaco.webp",
     tamaño: 6,
     descripcion:
       "La enigmática del zodiaco chino, símbolo de intuición y misterio: ¡la adorable She!🐍✨",
