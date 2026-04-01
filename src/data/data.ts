@@ -2,6 +2,15 @@ import type { Producto } from "../types/Producto";
 
 export const productos: Producto[] = [
   {
+    nombre: "Vestido para Bebe",
+    foto: "vestido-alana.webp",
+    tamaño: 10,
+    descripcion:
+      "Adorable ropa personalizable totalmente tejida para que tú bebe luzca fresco y a la moda ✨",
+    categoria: "Accesorios",
+    precio: 15.0,
+  },
+  {
     nombre: "Zhi el Ingenioso",
     foto: "raton-zodiaco.webp",
     tamaño: 6,
