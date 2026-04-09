@@ -2,6 +2,14 @@ import type { Producto } from "../types/Producto";
 
 export const productos: Producto[] = [
   {
+    nombre: "Perrito Mugiwara",
+    foto: "perrito-mugiwara.webp",
+    tamaño: 4,
+    descripcion: "Pequeño, suave y soñador… ¡el perrito que quiere ser rey de los corazones! 🐶💖",
+    categoria: "Amigurumis",
+    precio: 10.0,
+  },
+  {
     nombre: "Vestido para Bebe",
     foto: "vestido-alana.webp",
     tamaño: 10,
