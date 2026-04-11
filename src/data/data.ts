@@ -7,7 +7,7 @@ export const productos: Producto[] = [
     tamaño: 4,
     descripcion: "Pequeño, suave y soñador… ¡el perrito que quiere ser rey de los corazones! 🐶💖",
     categoria: "Amigurumis",
-    precio: 10.0,
+    precio: 12.0,
   },
   {
     nombre: "Vestido para Bebe",
@@ -25,7 +25,7 @@ export const productos: Producto[] = [
     descripcion:
       "El ratón más ingenioso del zodiaco chino, símbolo de inteligencia, astucia y curiosidad: ¡el adorable Zhi! 🐭✨",
     categoria: "Amigurumis",
-    precio: 10.0,
+    precio: 12.0,
   },
   {
     nombre: "Niu el Constante 🐮",
@@ -34,7 +34,7 @@ export const productos: Producto[] = [
     descripcion:
       "El más tranquila del zodiaco chino, símbolo de disciplina y perseverancia: ¡el carismatico Niu! 🐮✨",
     categoria: "Amigurumis",
-    precio: 10.0,
+    precio: 12.0,
   },
   {
     nombre: "Gou el Leal",
@@ -78,7 +78,7 @@ export const productos: Producto[] = [
     descripcion:
       "El mono más travieso del zodiaco chino, símbolo de ingenio, alegría y picardía: ¡el adorable Hou! 🐒✨",
     categoria: "Amigurumis",
-    precio: 10.0,
+    precio: 12.0,
   },
   {
     nombre: "Hu el Valiente 🐯",
@@ -87,7 +87,7 @@ export const productos: Producto[] = [
     descripcion:
       "El tigre más valiente del zodiaco chino, símbolo de liderazgo y energía indomable: ¡el feroz Hu! 🐯✨",
     categoria: "Amigurumis",
-    precio: 10.0,
+    precio: 12.0,
   },
   {
     nombre: "Link de Zelda",
@@ -95,7 +95,7 @@ export const productos: Producto[] = [
     tamaño: 6,
     descripcion: "El héroe de Hyrule ha llegado: ¡el adorable Link de The Legend of Zelda! 🗡️✨",
     categoria: "Amigurumis",
-    precio: 10.0,
+    precio: 12.0,
   },
   {
     nombre: "Himura Kenshin",
