@@ -2,6 +2,14 @@ import type { Producto } from "../types/Producto";
 
 export const productos: Producto[] = [
   {
+    nombre: "Amigirumi Personalizado",
+    foto: "amigurumi-mel-personalizado.webp",
+    tamaño: 6,
+    descripcion: "Tierno amigurumi diseñado a medida para amenizar la oficina de trabajo ✨🗄️",
+    categoria: "Amigurumis",
+    precio: 16.0,
+  },
+  {
     nombre: "Perrito Mugiwara",
     foto: "perrito-mugiwara.webp",
     tamaño: 4,
@@ -185,7 +193,7 @@ export const productos: Producto[] = [
     descripcion:
       "Dulces angelitos tejidos a mano, perfectos para decorar tus eventos más especiales. 👼✨",
     categoria: "Amigurumis",
-    precio: 12.0,
+    precio: 16.0,
   },
   {
     nombre: "Virgen de Guadalupe",
@@ -203,7 +211,7 @@ export const productos: Producto[] = [
     descripcion:
       "El osito más tierno y abrazable, hecho a mano con amor e hilo peludo, para llenar de dulzura tu vida. 🧸💕",
     categoria: "Amigurumis",
-    precio: 12.0,
+    precio: 15.0,
   },
   {
     nombre: "Pally, el Pati Pollito",
