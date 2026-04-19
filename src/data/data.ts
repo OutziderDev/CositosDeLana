@@ -2,6 +2,15 @@ import type { Producto } from "../types/Producto";
 
 export const productos: Producto[] = [
   {
+    nombre: "Cortinad de flores",
+    foto: "cortina-flores.webp",
+    tamaño: 36,
+    descripcion:
+      "Elegante cortina de flores tejida a mano, perfecta para decorar tus ventanas con un toque de naturaleza y color. 🌸✨",
+    categoria: "Accesorios",
+    precio: 16.0,
+  },
+  {
     nombre: "Amigirumi Personalizado",
     foto: "amigurumi-mel-personalizado.webp",
     tamaño: 6,
