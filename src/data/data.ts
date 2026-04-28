@@ -2,6 +2,15 @@ import type { Producto } from "../types/Producto";
 
 export const productos: Producto[] = [
   {
+    nombre: "Spiderman con telaraña",
+    foto: "spiderman-colgado.webp",
+    tamaño: 5,
+    descripcion:
+      "El superhéroe arácnido más valiente y ágil, ahora colgado de su telaraña retractil. 🕷️✨",
+    categoria: "Amigurumis",
+    precio: 10.0,
+  },
+  {
     nombre: "Cortinad de flores",
     foto: "cortina-flores.webp",
     tamaño: 36,
