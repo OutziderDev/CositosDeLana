@@ -1,0 +1,49 @@
+---
+const productos = Astro.props.informacion;
+---
+
+<article
+  class="bg-white rounded-3xl overflow-hidden border border-pink-200 shadow-sm hover:shadow-md transition-shadow duration-300 font-sans"
+>
+  <div class="relative h-48 w-full">
+    <img
+      src={"images/productos/" + productos[3].foto}
+      alt="Nombre del Producto"
+      class="w-full h-full object-cover"
+    />
+    <div
+      class="absolute top-4 right-4 flex items-center justify-center w-12 h-12 bg-pink-200 text-pink-700 rounded-full border-2 border-white shadow-sm font-bold text-sm tracking-tighter"
+      title="Cantidad disponible"
+    >
+      12
+    </div>
+  </div>
+
+  <div class="p-6">
+    <div class="flex justify-between items-start mb-2">
+      <h2 class="text-xl font-semibold text-pink-900 leading-tight">
+        Producto Artesanal
+      </h2>
+      <span
+        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700 border border-emerald-200"
+      >
+        Disponible
+      </span>
+    </div>
+
+    <p class="text-2xl font-bold text-pink-600 mb-3">$24.00</p>
+
+    <p class="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
+    </p>
+
+    <button
+      class="w-full py-3 px-4 bg-pink-100 hover:bg-pink-200 text-pink-700 font-semibold rounded-2xl transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-pink-300"
+    >
+      Añadir al carrito
+    </button>
+  </div>
+</article>
