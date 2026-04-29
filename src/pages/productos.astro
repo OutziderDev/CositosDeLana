@@ -8,7 +8,7 @@ import CatalogoProducCard from "@/components/catalogo/CatalogoProducCard.astro";
 
 <Layout>
   <section class="pt-24 bg-gradient-to-br from-crema to-30% to-more-light">
-    <div id="container" class="flex gap-4 max-w-6xl mx-auto p-2">
+    <div id="container" class="flex gap-4 max-w-6xl mx-auto p-2 pb-18">
       <aside id="filters" class="w-1/4 md:w-72 flex-shrink-0">
         <div
           class="sticky top-6 bg-[#FFFDF9] border border-pink-100 rounded-3xl p-6 shadow-sm"
@@ -172,6 +172,9 @@ import CatalogoProducCard from "@/components/catalogo/CatalogoProducCard.astro";
       <section
         class="w-3/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
       >
+        <h2 class="text-4xl font-caveat col-span-3 text-pink-900 text-end">
+          ¡Productos disponibles!
+        </h2>
         <CatalogoProducCard informacion={productos} />
         <CatalogoProducCard informacion={productos} />
         <CatalogoProducCard informacion={productos} />

@@ -1,36 +1,48 @@
 ---
-import ProductCard from '../components/ProductCard.astro'
-import {productos} from '../data/data'
+import ProductCard from "../components/ProductCard.astro";
+import { productos } from "../data/data";
 ---
 
-<section id="products" class="mt-10 md:mt-0 w-full">
+<section id="creaciones" class="mt-10 md:mt-0 w-full">
   <div class="max-w-6xl mx-auto p-2">
-    <h2 class="text-pinky-dark text-center text-6xl font-caveat font-semibold">Mis Creaciones</h2>
-    <p class="text-center text-text-dark text-xl mt-10 font-nunito">Cada pieza está hecha a mano con materiales de alta calidad, pensando en los <br> detalles que hacen especial cada creación.</p>
-    
+    <h2 class="text-pinky-dark text-center text-6xl font-caveat font-semibold">
+      Mis Creaciones
+    </h2>
+    <p class="text-center text-text-dark text-xl mt-10 font-nunito">
+      Cada pieza está hecha a mano con materiales de alta calidad, pensando en
+      los <br /> detalles que hacen especial cada creación.
+    </p>
+
     <!-- Menu Tabs -->
-    <div id="tabs" class="grid grid-cols-1 md:grid-cols-4 gap-4 items-center justify-center mt-10 font-nunito w-full">
-      <button   
-        class="tab-btn px-5 py-2 rounded-full text-xl transition-all text-white shadow-md  cursor-pointer"
-        data-tab="todos">
+    <div
+      id="tabs"
+      class="grid grid-cols-1 md:grid-cols-4 gap-4 items-center justify-center mt-10 font-nunito w-full"
+    >
+      <button
+        class="tab-btn px-5 py-2 rounded-full text-xl transition-all text-white shadow-md cursor-pointer"
+        data-tab="todos"
+      >
         Todos
       </button>
 
-      <button   
+      <button
         class="tab-btn px-5 py-2 rounded-full text-xl transition-all shadow-md bg-slate-100 hover:bg-pinky-regular hover:text-white cursor-pointer"
-        data-tab="amigurumis">
+        data-tab="amigurumis"
+      >
         Amigurumis
       </button>
 
-      <button   
+      <button
         class="tab-btn px-5 py-2 rounded-full text-xl transition-all shadow-md bg-slate-100 hover:bg-pinky-regular hover:text-white cursor-pointer"
-        data-tab="bolsos">
+        data-tab="bolsos"
+      >
         Bolsos
       </button>
 
-      <button   
+      <button
         class="tab-btn px-5 py-2 rounded-full text-xl transition-all shadow-md bg-slate-100 hover:bg-pinky-regular hover:text-white cursor-pointer"
-        data-tab="decoracion">
+        data-tab="decoracion"
+      >
         Accesorios
       </button>
     </div>
@@ -38,51 +50,69 @@ import {productos} from '../data/data'
     <!-- Tab Contents -->
     <div id="tab-contents" class="mt-10 w-full">
       <!-- Contenido de todos los productos -->
-      <section class="tab-content animate-fade-in-top w-full" data-content="todos">
-        <div id="contenedor-todos" class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {
-            productos.map( producto => (
-              <ProductCard product={producto}/>
-            ))
-          }
+      <section
+        class="tab-content animate-fade-in-top w-full"
+        data-content="todos"
+      >
+        <div
+          id="contenedor-todos"
+          class="grid grid-cols-1 md:grid-cols-3 gap-8"
+        >
+          {productos.map((producto) => <ProductCard product={producto} />)}
         </div>
       </section>
 
       <!-- Contenido de Solo Amigurumis -->
-      <section class="tab-content hidden animate-fade-in-left w-full" data-content="amigurumis">
-        <div id="contenedor-amigurumis" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <section
+        class="tab-content hidden animate-fade-in-left w-full"
+        data-content="amigurumis"
+      >
+        <div
+          id="contenedor-amigurumis"
+          class="grid grid-cols-1 md:grid-cols-3 gap-8"
+        >
           {
-            productos.filter( producto => producto.categoria === 'Amigurumis').map( producto => (
-              <ProductCard product={producto}/>
-            ))
+            productos
+              .filter((producto) => producto.categoria === "Amigurumis")
+              .map((producto) => <ProductCard product={producto} />)
           }
         </div>
       </section>
 
       <!-- Aquí va el contenido de Bolsos -->
-      <section class="tab-content hidden animate-fade-in-left w-full" data-content="bolsos">
-        <div id="contenedor-bolsos" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <section
+        class="tab-content hidden animate-fade-in-left w-full"
+        data-content="bolsos"
+      >
+        <div
+          id="contenedor-bolsos"
+          class="grid grid-cols-1 md:grid-cols-3 gap-8"
+        >
           {
-            productos.filter( producto => producto.categoria === 'Bolsos').map( producto => (
-              <ProductCard product={producto}/>
-            ))
+            productos
+              .filter((producto) => producto.categoria === "Bolsos")
+              .map((producto) => <ProductCard product={producto} />)
           }
         </div>
       </section>
 
-
       <!-- Aquí va el contenido de Decoración -->
-      <section class="tab-content hidden animate-fade-in-left w-full" data-content="decoracion">
-        <div id="contenedor-decoracion" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <section
+        class="tab-content hidden animate-fade-in-left w-full"
+        data-content="decoracion"
+      >
+        <div
+          id="contenedor-decoracion"
+          class="grid grid-cols-1 md:grid-cols-3 gap-8"
+        >
           {
-            productos.filter( producto => producto.categoria === 'Accesorios').map( producto => (
-              <ProductCard product={producto}/>
-            ))
+            productos
+              .filter((producto) => producto.categoria === "Accesorios")
+              .map((producto) => <ProductCard product={producto} />)
           }
         </div>
       </section>
     </div>
-
   </div>
 </section>
 
@@ -91,14 +121,14 @@ import {productos} from '../data/data'
     animation: fadeIn 0.3s ease-in-out;
   }
   .animate-fade-in-left {
-    animation: fadeInLeft 0.3s ease-out both ;
+    animation: fadeInLeft 0.3s ease-out both;
   }
   @keyframes fadeIn {
     0% {
       opacity: 0;
-      transform: translate( 0, 100px);
+      transform: translate(0, 100px);
     }
-    
+
     100% {
       opacity: 1;
       transform: translate 0;
@@ -111,48 +141,66 @@ import {productos} from '../data/data'
       transform: translate(-100px, 0px);
     }
     100% {
-      opacity:1;
-      transform: translate(0,0);
+      opacity: 1;
+      transform: translate(0, 0);
     }
   }
 </style>
 
 <script>
   // Aseguramos que los elementos existen y son del tipo correcto
-  const tabBtns = document.querySelectorAll<HTMLButtonElement>('.tab-btn');
-  const tabContents = document.querySelectorAll<HTMLElement>('.tab-content');
+  const tabBtns = document.querySelectorAll<HTMLButtonElement>(".tab-btn");
+  const tabContents = document.querySelectorAll<HTMLElement>(".tab-content");
 
-  function setActiveTab(tab: any  ) {
+  function setActiveTab(tab: any) {
     if (!tab) return;
 
-    tabBtns.forEach(btn => {
+    tabBtns.forEach((btn) => {
       const btnTab = btn.dataset.tab;
       if (btnTab === tab) {
-        btn.classList.remove('bg-slate-100', 'hover:text-white', 'hover:bg-pinky-regular', 'text-black');
-        btn.classList.add('bg-pinky-dark', 'text-white', 'hover:bg-pinky-regular');
+        btn.classList.remove(
+          "bg-slate-100",
+          "hover:text-white",
+          "hover:bg-pinky-regular",
+          "text-black",
+        );
+        btn.classList.add(
+          "bg-pinky-dark",
+          "text-white",
+          "hover:bg-pinky-regular",
+        );
       } else {
-        btn.classList.remove('bg-pinky-regular', 'text-white', 'hover:bg-pinky-dark');
-        btn.classList.add('bg-slate-100', 'hover:text-white', 'hover:bg-pinky-regular', 'text-black');
+        btn.classList.remove(
+          "bg-pinky-regular",
+          "text-white",
+          "hover:bg-pinky-dark",
+        );
+        btn.classList.add(
+          "bg-slate-100",
+          "hover:text-white",
+          "hover:bg-pinky-regular",
+          "text-black",
+        );
       }
     });
 
-    tabContents.forEach(content => {
+    tabContents.forEach((content) => {
       const contentTab = content.dataset.content;
       if (contentTab === tab) {
-        content.classList.remove('hidden');
+        content.classList.remove("hidden");
       } else {
-        content.classList.add('hidden');
+        content.classList.add("hidden");
       }
     });
   }
 
-  tabBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
+  tabBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
       const tab = btn.dataset.tab;
       setActiveTab(tab);
     });
   });
 
   // Inicializa con la pestaña "todos"
-  setActiveTab('todos');
+  setActiveTab("todos");
 </script>
