@@ -3,7 +3,7 @@ const productos = Astro.props.informacion;
 ---
 
 <article
-  class="bg-white rounded-3xl overflow-hidden border border-pink-200 shadow-sm hover:shadow-md transition-shadow duration-300 font-sans"
+  class="bg-white w-full rounded-3xl overflow-hidden border border-pink-200 shadow-sm hover:shadow-md transition-shadow duration-300 font-sans"
 >
   <div class="relative h-48 w-full">
     <img
@@ -20,18 +20,17 @@ const productos = Astro.props.informacion;
   </div>
 
   <div class="p-6">
-    <div class="flex justify-between items-start mb-2">
-      <h2 class="text-xl font-semibold text-pink-900 leading-tight">
-        Producto Artesanal
-      </h2>
+    <h2 class="text-xl font-semibold text-pink-900 leading-tight mb-4">
+      Producto Artesanal
+    </h2>
+    <div class="flex justify-between items-center">
+      <p class="text-2xl font-bold text-pink-600 mb-3">$24.00</p>
       <span
-        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700 border border-emerald-200"
+        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700 border border-emerald-300"
       >
         Disponible
       </span>
     </div>
-
-    <p class="text-2xl font-bold text-pink-600 mb-3">$24.00</p>
 
     <p class="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
