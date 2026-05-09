@@ -1,43 +1,90 @@
 ---
 
 ---
-<section id="hero" class="relative overflow-hidden bg-gradient-to-br from-crema to-50% to-more-light w-full">
-  <div class="max-w-4xl lg:max-w-6xl  mx-auto pt-35 md:pt-20 pb-25 md:pb-40 px-4 md:px-2">
-    <div class="flex flex-col md:flex-row gap-8 ">
+
+<section
+  id="hero"
+  class="relative overflow-hidden bg-gradient-to-br from-crema to-50% to-more-light w-full"
+>
+  <div
+    class="max-w-4xl lg:max-w-6xl mx-auto pt-35 md:pt-20 pb-25 md:pb-40 px-4 md:px-2"
+  >
+    <div class="flex flex-col md:flex-row gap-8">
       <!-- Info Cositos -->
       <div class="flex flex-col justify-center md:w-2/4">
-        <h1 class="font-caveat text-center md:text-left text-7xl md:text-8xl text-pinky-dark title-animation font-bold transition-normal">Cositos de Lana</h1>
-        <p class="text-text-light text-center md:text-left font-nunito text-2xl my-5 font-bold sepia-50">Tejidos únicos hechos con amor y dedicación ✨</p>
-        <p class="text-pretty text-center md:text-left  text-lg font-nunito font-bold text-text-dark">Amigurumis, bolsos artesanales y decoración para el hogar. Cada pieza es única y especialmente diseñada para llenar de calidez y color tu espacio.</p>
+        <h1
+          class="font-caveat text-center md:text-left text-7xl md:text-8xl text-pinky-dark title-animation font-bold transition-normal"
+        >
+          Cositos de Lana
+        </h1>
+        <p
+          class="text-text-light text-center md:text-left font-nunito text-2xl my-5 font-bold sepia-50"
+        >
+          Tejidos únicos hechos con amor y dedicación ✨
+        </p>
+        <p
+          class="text-pretty text-center md:text-left text-lg font-nunito font-bold text-text-dark"
+        >
+          Amigurumis, bolsos artesanales y decoración para el hogar. Cada pieza
+          es única y especialmente diseñada para llenar de calidez y color tu
+          espacio.
+        </p>
         <div class="flex flex-col md:flex-row gap-4 mt-10">
-          <a href="/#products" class="px-7 py-4 rounded-full bg-pinky-dark hover:contrast-125 text-xl text-center text-white transition-all font-bold cursor-pointer">Ver Productos</a>
-          <a href="/#contactame" class="px-7 py-4 rounded-full border-4 border-pinky-dark bg-transparent hover:bg-pinky-dark text-xl text-center text-pinky-dark hover:text-white transition-all font-bold cursor-pointer">Cotizar Producto</a>
+          <a
+            href="/#products"
+            class="px-7 py-4 rounded-full bg-pinky-dark hover:contrast-125 text-xl text-center text-white transition-all font-bold cursor-pointer"
+            >Ver Productos</a
+          >
+          <a
+            href="/#contactame"
+            class="px-7 py-4 rounded-full border-4 border-pinky-dark bg-transparent hover:bg-pinky-dark text-xl text-center text-pinky-dark hover:text-white transition-all font-bold cursor-pointer"
+            >Cotizar Producto</a
+          >
         </div>
       </div>
 
       <!-- Ilustracion Cositos -->
       <div class="relative w-full md:w-2/4 select-none">
-        <img src="/images/lanaRosa.webp" class="absolute scale-50 animacion-flote1 z-20" alt="">
-        <img src="/images/lanaVerde.webp" class="absolute size-10 z-20 left-5 top-15 animacion-flote-linear" alt="">
-        <img src="/images/ilustracion.webp" class="relative object-contain aspect-square w-full z-30 " alt="">
+        <img
+          src="/images/lanaRosa.webp"
+          class="absolute scale-50 animacion-flote1 z-20"
+          alt=""
+        />
+        <img
+          src="/images/lanaVerde.webp"
+          class="absolute size-10 z-20 left-5 top-15 animacion-flote-linear"
+          alt=""
+        />
+        <img
+          src="/images/ilustracion.webp"
+          class="relative object-contain aspect-square w-full z-30"
+          alt=""
+        />
         <div class="w-full absolute z-10 bottom-0">
           <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
             <path fill="#FEF9F3" transform="translate(100 100)">
-              <animate attributeName="d" dur="10s" repeatCount="indefinite"
+              <animate
+                attributeName="d"
+                dur="10s"
+                repeatCount="indefinite"
                 values="
                   M55,-49.4C70.6,-39.3,82.3,-19.6,81.5,-0.8C80.7,18,67.3,35.9,51.6,50.4C35.9,64.9,18,76,1.1,74.9C-15.9,73.9,-31.7,60.7,-40.5,46.2C-49.3,31.7,-51,15.9,-53.5,-2.5C-56.1,-20.9,-59.3,-41.8,-50.6,-51.8C-41.8,-61.9,-20.9,-61.2,-0.6,-60.6C19.6,-60,39.3,-59.4,55,-49.4Z;
                   M41.8,-42.4C53.8,-29.8,62.9,-14.9,64.2,1.3C65.5,17.6,59.1,35.2,47.2,47.9C35.2,60.7,17.6,68.7,-1.2,69.9C-20,71.1,-40,65.5,-52.4,52.8C-64.8,40,-69.6,20,-67.7,1.9C-65.9,-16.3,-57.3,-32.5,-44.9,-45.1C-32.5,-57.7,-16.3,-66.7,-0.7,-66C14.9,-65.3,29.8,-55,41.8,-42.4Z;
                   M52.5,-49.1C68.7,-36.3,82.8,-18.2,84.2,1.4C85.6,20.9,74.2,41.8,58,55.9C41.8,70,20.9,77.2,4.4,72.8C-12.1,68.5,-24.3,52.4,-31.5,38.4C-38.7,24.3,-41.1,12.1,-45.8,-4.7C-50.5,-21.6,-57.6,-43.2,-50.4,-55.9C-43.2,-68.6,-21.6,-72.5,-1.7,-70.8C18.2,-69.1,36.3,-61.8,52.5,-49.1Z;
                   M52.3,-49.6C68.8,-35.9,83.7,-18,84.9,1.2C86.1,20.3,73.5,40.7,57.1,53.8C40.7,67,20.3,73,0.7,72.3C-18.9,71.6,-37.8,64.2,-53.7,51C-69.5,37.8,-82.3,18.9,-79.9,2.4C-77.5,-14.2,-60,-28.3,-44.2,-42C-28.3,-55.7,-14.2,-68.8,1.9,-70.7C18,-72.6,35.9,-63.2,52.3,-49.6Z;
                   M55,-49.4C70.6,-39.3,82.3,-19.6,81.5,-0.8C80.7,18,67.3,35.9,51.6,50.4C35.9,64.9,18,76,1.1,74.9C-15.9,73.9,-31.7,60.7,-40.5,46.2C-49.3,31.7,-51,15.9,-53.5,-2.5C-56.1,-20.9,-59.3,-41.8,-50.6,-51.8C-41.8,-61.9,-20.9,-61.2,-0.6,-60.6C19.6,-60,39.3,-59.4,55,-49.4Z
-                " />
+                "
+              ></animate>
             </path>
           </svg>
         </div>
         <div class="w-full absolute z-0 bottom-0">
           <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
             <path fill="#E79BB1" transform="translate(100 100)">
-              <animate attributeName="d" dur="12s" repeatCount="indefinite"
+              <animate
+                attributeName="d"
+                dur="12s"
+                repeatCount="indefinite"
                 values="
                   M32.3,-40.3C39.9,-24.7,42.8,-12.3,46.2,3.4C49.6,19.2,53.5,38.3,45.9,54.9C38.3,71.5,19.2,85.6,1,84.6C-17.2,83.6,-34.4,67.6,-49.5,51C-64.7,34.4,-77.7,17.2,-75.9,1.9C-74,-13.5,-57.3,-27,-42.1,-42.6C-27,-58.2,-13.5,-75.9,-0.6,-75.3C12.3,-74.7,24.7,-55.9,32.3,-40.3Z;
 
@@ -49,7 +96,7 @@
 
                   M32.3,-40.3C39.9,-24.7,42.8,-12.3,46.2,3.4C49.6,19.2,53.5,38.3,45.9,54.9C38.3,71.5,19.2,85.6,1,84.6C-17.2,83.6,-34.4,67.6,-49.5,51C-64.7,34.4,-77.7,17.2,-75.9,1.9C-74,-13.5,-57.3,-27,-42.1,-42.6C-27,-58.2,-13.5,-75.9,-0.6,-75.3C12.3,-74.7,24.7,-55.9,32.3,-40.3Z
                 "
-              />
+              ></animate>
             </path>
           </svg>
         </div>
@@ -58,8 +105,15 @@
   </div>
 
   <!-- Shape separadora -->
-  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" class="absolute w-full fill-white rotate-y-180 -bottom-1" >
-      <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+  <svg
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1200 120"
+    class="absolute w-full fill-white rotate-y-180 -bottom-1"
+  >
+    <path
+      d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+      class="shape-fill"></path>
   </svg>
 </section>
 
@@ -68,7 +122,7 @@
     animation: flotar1 15s infinite alternate;
   }
   .animacion-flote-linear {
-    animation: flotar-linear 10s infinite alternate ease-in-out ;
+    animation: flotar-linear 10s infinite alternate ease-in-out;
   }
   .title-animation {
     animation: title-float 4s ease infinite alternate;
@@ -85,21 +139,21 @@
 
   @keyframes flotar1 {
     0% {
-      transform: translate(-60px,0px);
+      transform: translate(-60px, 0px);
     }
-    50%{
+    50% {
       transform: translate(0, 350px) rotate(180deg);
     }
     100% {
-      transform: translate(100px,0px);
+      transform: translate(100px, 0px);
     }
   }
 
   @keyframes flotar-linear {
     0% {
-      transform: translate(0,0) rotate(0deg);
+      transform: translate(0, 0) rotate(0deg);
     }
-    
+
     100% {
       transform: translate(0px, 200px) rotate(180deg);
     }

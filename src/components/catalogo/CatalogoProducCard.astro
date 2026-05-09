@@ -1,5 +1,5 @@
 ---
-const productos = Astro.props.informacion;
+const producto = Astro.props.informacion;
 ---
 
 <article
@@ -7,8 +7,8 @@ const productos = Astro.props.informacion;
 >
   <div class="relative h-48 w-full">
     <img
-      src={"images/productos/" + productos[3].foto}
-      alt="Nombre del Producto"
+      src={"../images/productos/" + producto.foto}
+      alt=`Imagen de referencia de ${producto.nombre}`
       class="w-full h-full object-cover"
     />
     <div
@@ -20,8 +20,10 @@ const productos = Astro.props.informacion;
   </div>
 
   <div class="p-6">
-    <h2 class="text-xl font-semibold text-pink-900 leading-tight mb-4">
-      Producto Artesanal
+    <h2
+      class="text-md capitalize font-semibold text-pink-900 leading-tight mb-4"
+    >
+      {producto.nombre}
     </h2>
     <div class="flex justify-between items-center">
       <p class="text-2xl font-bold text-pink-600 mb-3">$24.00</p>
