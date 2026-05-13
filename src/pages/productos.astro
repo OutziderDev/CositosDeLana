@@ -68,13 +68,17 @@ import CatalogoProducCard from "@/components/catalogo/CatalogoProducCard.astro";
             >
             <input
               type="range"
+              id="priceFilter"
+              min="0"
+              max="100"
+              value="100"
               class="w-full h-2 bg-pink-100 rounded-lg appearance-none cursor-pointer accent-pink-500"
             />
             <div
               class="flex justify-between text-xs text-pink-400 mt-2 font-medium"
             >
               <span>$0</span>
-              <span>$100</span>
+              <span id="priceValue">$100</span>
             </div>
           </div>
 
@@ -160,7 +164,7 @@ import CatalogoProducCard from "@/components/catalogo/CatalogoProducCard.astro";
         </h2>
         <div id="productList" class="md:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-4">
           {productos.map((producto) => (
-            <div data-nombre={producto.nombre.toLowerCase()} data-categoria={producto.categoria.toLowerCase()} data-index>
+            <div data-nombre={producto.nombre.toLowerCase()} data-categoria={producto.categoria.toLowerCase()} data-precio={producto.precio} data-index>
               <CatalogoProducCard informacion={producto} />
             </div>
           ))}
@@ -179,6 +183,8 @@ import CatalogoProducCard from "@/components/catalogo/CatalogoProducCard.astro";
         const noResults = document.getElementById('noResults');
         const sortAZ = document.getElementById('sortAZ');
         const sortZA = document.getElementById('sortZA');
+        const priceFilter = document.getElementById('priceFilter');
+        const priceValue = document.getElementById('priceValue');
         const ITEMS_PER_PAGE = 9;
         let currentPage = 1;
         let currentSort = '';
@@ -195,17 +201,20 @@ import CatalogoProducCard from "@/components/catalogo/CatalogoProducCard.astro";
         function renderProducts(page = 1) {
           const query = searchInput.value.toLowerCase().trim();
           const category = categorySelect.value;
+          const maxPrice = parseFloat(priceFilter.value);
           const items = productList.querySelectorAll('[data-index]');
           const filtered = [];
 
           items.forEach(item => {
             const nombre = item.getAttribute('data-nombre') || '';
             const categoria = item.getAttribute('data-categoria') || '';
+            const precio = parseFloat(item.getAttribute('data-precio')) || 0;
 
             const matchesText = !query || nombre.includes(query);
             const matchesCategory = category === 'todos' || categoria === CATEGORY_MAP[category];
+            const matchesPrice = precio <= maxPrice;
 
-            if (matchesText && matchesCategory) {
+            if (matchesText && matchesCategory && matchesPrice) {
               item.style.display = '';
               filtered.push(item);
             } else {
@@ -227,7 +236,7 @@ import CatalogoProducCard from "@/components/catalogo/CatalogoProducCard.astro";
             });
           }
 
-          if (filtered.length === 0 && (query || category !== 'todos')) {
+          if (filtered.length === 0 && (query || category !== 'todos' || maxPrice < 100)) {
             noResults.classList.remove('hidden');
           } else {
             noResults.classList.add('hidden');
@@ -282,8 +291,16 @@ import CatalogoProducCard from "@/components/catalogo/CatalogoProducCard.astro";
           renderProducts(1);
         }
 
+        function updatePriceDisplay() {
+          priceValue.textContent = '$' + priceFilter.value;
+        }
+
         searchInput.addEventListener('input', onFilterChange);
         categorySelect.addEventListener('change', onFilterChange);
+        priceFilter.addEventListener('input', () => {
+          updatePriceDisplay();
+          onFilterChange();
+        });
         sortAZ.addEventListener('click', () => setSort('az'));
         sortZA.addEventListener('click', () => setSort('za'));
         renderProducts();
