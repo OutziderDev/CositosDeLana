@@ -157,7 +157,7 @@ import CatalogoProducCard from "@/components/catalogo/CatalogoProducCard.astro";
         </h2>
         <div id="productList" class="md:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-4">
           {productos.map((producto) => (
-            <div data-nombre={producto.nombre.toLowerCase()} data-index>
+            <div data-nombre={producto.nombre.toLowerCase()} data-categoria={producto.categoria.toLowerCase()} data-index>
               <CatalogoProducCard informacion={producto} />
             </div>
           ))}
@@ -170,20 +170,33 @@ import CatalogoProducCard from "@/components/catalogo/CatalogoProducCard.astro";
 
       <script define:vars={{ productos }}>
         const searchInput = document.getElementById('searchInput');
+        const categorySelect = document.getElementById('categoriasfilter');
         const productList = document.getElementById('productList');
         const pagination = document.getElementById('pagination');
         const noResults = document.getElementById('noResults');
         const ITEMS_PER_PAGE = 9;
         let currentPage = 1;
 
+        const CATEGORY_MAP = {
+          amigurumis: 'amigurumis',
+          bolsos: 'bolsos',
+          decoracion: 'accesorios',
+        };
+
         function renderProducts(page = 1) {
           const query = searchInput.value.toLowerCase().trim();
+          const category = categorySelect.value;
           const items = productList.querySelectorAll('[data-index]');
           const filtered = [];
 
           items.forEach(item => {
             const nombre = item.getAttribute('data-nombre') || '';
-            if (!query || nombre.includes(query)) {
+            const categoria = item.getAttribute('data-categoria') || '';
+
+            const matchesText = !query || nombre.includes(query);
+            const matchesCategory = category === 'todos' || categoria === CATEGORY_MAP[category];
+
+            if (matchesText && matchesCategory) {
               item.style.display = '';
               filtered.push(item);
             } else {
@@ -191,7 +204,7 @@ import CatalogoProducCard from "@/components/catalogo/CatalogoProducCard.astro";
             }
           });
 
-          if (filtered.length === 0 && query) {
+          if (filtered.length === 0 && (query || category !== 'todos')) {
             noResults.classList.remove('hidden');
           } else {
             noResults.classList.add('hidden');
@@ -229,7 +242,13 @@ import CatalogoProducCard from "@/components/catalogo/CatalogoProducCard.astro";
           }
         }
 
-        searchInput.addEventListener('input', () => { currentPage = 1; renderProducts(1); });
+        function onFilterChange() {
+          currentPage = 1;
+          renderProducts(1);
+        }
+
+        searchInput.addEventListener('input', onFilterChange);
+        categorySelect.addEventListener('change', onFilterChange);
         renderProducts();
       </script>
     </div>

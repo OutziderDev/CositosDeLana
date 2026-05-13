@@ -85,6 +85,7 @@ export const productos: Producto[] = [
     tamaño: 6,
     descripcion:
       "La enigmática del zodiaco chino, símbolo de intuición y misterio: ¡la adorable She!🐍✨",
+    categoria: "Amigurumis",
     precio: 12.0,
   },
   {
