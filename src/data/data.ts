@@ -19,7 +19,7 @@ export const productos: Producto[] = [
     precio: 10.0,
   },
   {
-    nombre: "Cortinad de flores",
+    nombre: "Cortinas de flores",
     foto: "cortina-flores.webp",
     tamaño: 36,
     descripcion:
@@ -42,6 +42,15 @@ export const productos: Producto[] = [
     descripcion: "Pequeño, suave y soñador… ¡el perrito que quiere ser rey de los corazones! 🐶💖",
     categoria: "Amigurumis",
     precio: 12.0,
+  },
+  {
+    nombre: "Guirnalda de Crochet",
+    foto: "guirnalda-crochet.webp",
+    tamaño: 36,
+    descripcion:
+      "Guirnalda de crochet tejida a mano, perfecta para decorar tus espacios con un toque artesanal y colorido. 🎉✨",
+    categoria: "Accesorios",
+    precio: 16.0,
   },
   {
     nombre: "Vestido para Bebe",
