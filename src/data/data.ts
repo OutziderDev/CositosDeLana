@@ -444,11 +444,11 @@ export const productos: Producto[] = [
   },
   {
     nombre: "Ghost",
-    foto: "ghost.webp",
+    foto: "ghost-newedition.webp",
     tamaño: 6,
     descripcion:
       "Directo del universo de COD, este amigurumi te acompañara en todas las partidas y aventuras",
-    categoria: "Amigurumis",
+    categoria: "Accesorios",
     precio: 8.0,
   },
   {
